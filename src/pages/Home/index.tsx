@@ -1,7 +1,10 @@
-import { useEffect } from 'preact/hooks';
+import { useContext, useEffect } from 'preact/hooks';
+import { Theme } from '@/index';
 import css from './style.module.scss';
 
 export function Home() {
+  const { theme } = useContext(Theme);
+
   useEffect(() => {
     document
       .querySelectorAll<HTMLDivElement>(`.${css.card}`)
@@ -10,6 +13,65 @@ export function Home() {
         card.style.setProperty('--sticker-rotation', `${rotation}deg`);
       });
   }, []);
+
+  if (theme === 'dark') {
+    return (
+      <div class={css.wrapper}>
+        <section>
+          <h2>What is it?</h2>
+          <p>
+            Anons from the /mlp/ board got together to host their own online
+            <s>shit show</s> convention.
+          </p>
+          <div class={css.announcement}>
+            Event Dates: <b>TBD</b>
+          </div>
+        </section>
+
+        <section>
+          <h2>How to Watch</h2>
+          <p>
+            Check the <a href='/schedule'>Schedule</a> for live streaming times
+            and links. All events will be available live and as replays.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Happened?</h2>
+          <p>
+            Over 1,640 anons attended at least some portion of the festivities
+            the weekend of June 28-30, 2024.
+          </p>
+          <ul>
+            <li>
+              <a href='//2024.mlpcon.online/'>/mlp/ con 2024</a>
+            </li>
+            <li>
+              <a href='//2023.mlpcon.online/'>/mlp/ con 2023</a>
+            </li>
+            <li>
+              <a href='//2022.mlpcon.online/'>/mlp/ con 2022</a>
+            </li>
+            <li>
+              <a href='//2021.mlpcon.online/'>/mlp/ con 2021</a>
+            </li>
+            <li>
+              <a href='//2020.mlpcon.online/'>/mlp/ con 2020</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Important Notices</h2>
+          <p>Please note the following prohibitions:</p>
+          <ul>
+            <li>No overthinking the horse agenda</li>
+            <li>No questioning the equine wisdom</li>
+          </ul>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div class={css.wrapper}>
