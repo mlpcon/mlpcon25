@@ -12,6 +12,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from '@/pages/Home';
 import { NotFound } from '@/pages/_404.tsx';
+import { Schedule } from './pages/Schedule';
 import contard from './assets/images/contard.png';
 import anon from './assets/images/anon.png';
 import '@/style.scss';
@@ -35,6 +36,7 @@ export function App() {
         <main>
           <Router>
             <Route path='/' component={Home} />
+            <Route path='/schedule' component={Schedule} />
             <Route default component={NotFound} />
           </Router>
         </main>

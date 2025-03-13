@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -28,6 +29,10 @@
 
 main {
   flex-grow: 2;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 2;
 }
 
 .anon {
@@ -51,4 +56,28 @@ a {
 
 a:hover {
   font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
+  margin: 1rem 0;
+  transform: rotate(-2deg);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
+  margin: 1rem 0;
+  transform: rotate(-2deg);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
+  margin: 1rem 0;
+  transform: rotate(-2deg);
 }

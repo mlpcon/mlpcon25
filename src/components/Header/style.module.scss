@@ -95,17 +95,18 @@
   border-radius: 100%;
   cursor: pointer;
   z-index: 1;
+  z-index: 10;
 
   &::after {
     content: '';
-    position: fixed;
+    position: absolute;
     background-color: #020016;
     width: 32px;
     height: 32px;
     border-radius: 100%;
     transform: scale(1);
-    left: 16px;
-    top: 16px;
+    left: 0;
+    top: 0;
     transform-origin: center;
     transition: transform 0.5s ease-in-out;
   }
@@ -113,6 +114,9 @@
   &.switched {
     &::after {
       transform: scale(500);
+      position: fixed;
+      left: 16px;
+      top: 16px;
     }
   }
 }

@@ -67,19 +67,29 @@ export function Home() {
           </p>
           <ul>
             <li>
-              <a href='https://2024.mlpcon.online/'>/mlp/ con 2024</a>
+              <a target={'_blank'} href='//2024.mlpcon.online/'>
+                /mlp/ con 2024
+              </a>
             </li>
             <li>
-              <a href='https://2023.mlpcon.online/'>/mlp/ con 2023</a>
+              <a target={'_blank'} href='//2023.mlpcon.online/'>
+                /mlp/ con 2023
+              </a>
             </li>
             <li>
-              <a href='https://2022.mlpcon.online/'>/mlp/ con 2022</a>
+              <a target={'_blank'} href='//2022.mlpcon.online/'>
+                /mlp/ con 2022
+              </a>
             </li>
             <li>
-              <a href='https://2021.mlpcon.online/'>/mlp/ con 2021</a>
+              <a target={'_blank'} href='//2021.mlpcon.online/'>
+                /mlp/ con 2021
+              </a>
             </li>
             <li>
-              <a href='https://2020.mlpcon.online/'>/mlp/ con 2020</a>
+              <a target={'_blank'} href='//2020.mlpcon.online/'>
+                /mlp/ con 2020
+              </a>
             </li>
           </ul>
         </div>
