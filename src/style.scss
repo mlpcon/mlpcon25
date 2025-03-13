@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #d35400;
+  --secondary-color: #c0392b;
+  --background-color: #f7f2e7;
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --sticker-rotation: -5deg;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  min-height: 100vh;
+  min-height: 100svh;
+  font-family: 'Patrick Hand', cursive;
+  background: var(--background-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' fill='%23f7f2e7'/%3E%3Cpath d='M0 20 L20 0' stroke='%23e0dcd3' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-size: 20px 20px;
+  color: var(--text-color);
+  transition: background 0.5s ease, color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 2;
+}
+
+.anon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+}
+
+.contard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  font-weight: 700;
+}

@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-top: 3px dashed var(--primary-color);
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    backdrop-filter: blur(6px);
+  }
+}
