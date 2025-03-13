@@ -16,6 +16,7 @@ import { Schedule } from './pages/Schedule';
 import contard from './assets/images/contard.png';
 import anon from './assets/images/anon.png';
 import '@/style.scss';
+import { Vendors } from './pages/Vendors';
 
 type Themes = 'light' | 'dark';
 
@@ -37,6 +38,7 @@ export function App() {
           <Router>
             <Route path='/' component={Home} />
             <Route path='/schedule' component={Schedule} />
+            <Route path='/vendors' component={Vendors} />
             <Route default component={NotFound} />
           </Router>
         </main>

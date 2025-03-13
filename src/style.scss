@@ -25,6 +25,7 @@
   transition: background 0.5s ease, color 0.5s ease;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 main {

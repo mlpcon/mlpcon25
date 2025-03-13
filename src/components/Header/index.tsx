@@ -21,11 +21,9 @@ export function Header() {
 
   return (
     <header class={css.header}>
-      <div
-        onClick={onClick}
-        class={cn(css.imgBg, { [css.switched]: switched })}
-      >
+      <div class={cn(css.imgBg, { [css.switched]: switched })}>
         <img
+          onClick={onClick}
           class={css.icon}
           src={theme === 'dark' ? sun : moon}
           alt='theme switch'
