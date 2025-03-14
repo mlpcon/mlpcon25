@@ -7,15 +7,18 @@ import {
 } from 'preact-iso';
 import { createContext } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
+import cn from 'classnames';
+
+import { Home } from '@/pages/Home';
+import { Vendors } from '@/pages/Vendors';
+import { NotFound } from '@/pages/_404.tsx';
+import { Schedule } from '@/pages/Schedule';
 
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { Home } from '@/pages/Home';
-import { NotFound } from '@/pages/_404.tsx';
-import { Schedule } from './pages/Schedule';
+
 import contard from './assets/images/contard.png';
 import anon from './assets/images/anon.png';
-import { Vendors } from './pages/Vendors';
 import '@/style.scss';
 
 type Themes = 'light' | 'dark';
@@ -58,6 +61,7 @@ export function App() {
         emoji.style.opacity = '0.8';
         emoji.style.animation = `floatScale ${2 + Math.random() * 3}s infinite`;
         emoji.style.transition = `transform .25s ease`;
+        emoji.style.pointerEvents = 'none';
         document.body.appendChild(emoji);
         setTimeout(() => {
           emoji.remove();
@@ -72,8 +76,6 @@ export function App() {
   return (
     <Theme.Provider value={{ theme, setTheme: setThemeWrapper }}>
       <LocationProvider>
-        <img src={contard} alt='Contard' class='contard' />
-        <img src={anon} alt='Anon' class='anon' />
         <Header />
         <main>
           <Router>
@@ -83,6 +85,9 @@ export function App() {
             <Route default component={NotFound} />
           </Router>
         </main>
+
+        <img src={contard} alt='Contard' class='contard' />
+        <img src={anon} alt='Anon' class='anon' />
         <Footer />
       </LocationProvider>
     </Theme.Provider>

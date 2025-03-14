@@ -1,5 +1,7 @@
 import { useContext, useEffect } from 'preact/hooks';
 import { Theme } from '@/index';
+import { getRandomItems } from '@/utils';
+import { VENDORS } from '@/consts';
 import css from './style.module.scss';
 
 export function Home() {
@@ -12,7 +14,7 @@ export function Home() {
         const rotation = Math.random() * 8 - 4;
         card.style.setProperty('--sticker-rotation', `${rotation}deg`);
       });
-  }, []);
+  }, [theme]);
 
   if (theme === 'dark') {
     return (
@@ -20,7 +22,7 @@ export function Home() {
         <section>
           <h2>What is it?</h2>
           <p>
-            Anons from the /mlp/ board got together to host their own online
+            Anons from the /mlp/ board got together to host their own online{' '}
             <s>shit show</s> convention.
           </p>
           <div class={css.announcement}>
@@ -73,13 +75,15 @@ export function Home() {
     );
   }
 
+  const vendors = getRandomItems(VENDORS, 3);
+
   return (
     <div class={css.wrapper}>
       <div class={css.card}>
         <div class={css.cardContent}>
           <h2>What is it?</h2>
           <p>
-            Anons from the /mlp/ board got together to host their own online
+            Anons from the /mlp/ board got together to host their own online{' '}
             <s>shit show</s> convention. With over 1,640 anons attended at least
             some portion of the festivities the weekend of June 28-30, 2024.
           </p>
@@ -103,16 +107,14 @@ export function Home() {
             Stickers? Badges? Questionable fanart? It's yours my friend! As long
             as you have enough bits!
           </p>
-          <ul class='vendor-grid'>
-            <li class='vendor'>
-              <a href='#'>Random vendor 1</a>
-            </li>
-            <li class='vendor'>
-              <a href='#'>Random vendor 2</a>
-            </li>
-            <li class='vendor'>
-              <a href='#'>Random vendor 3</a>
-            </li>
+          <ul>
+            {vendors.map((item) => (
+              <li key={item.title}>
+                <a href={item.link} target={'_blank'}>
+                  {item.title}
+                </a>
+              </li>
+            ))}
           </ul>
           <p>
             Check the <a href='/vendors'>Vendors</a> page for more!

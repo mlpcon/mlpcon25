@@ -30,6 +30,7 @@
     font-size: 1.8rem;
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    margin-top: 0;
     border-bottom: 3px dotted var(--primary-color);
   }
 
@@ -68,7 +69,7 @@
     padding: 2rem;
     background: rgba(0, 0, 30, 0.5);
     backdrop-filter: blur(5px);
-    border: 4px groove var(--contard-yellow);
+    border: 4px groove var(--secondary-color);
     border-radius: 8px;
     position: relative;
     z-index: 1;
@@ -78,8 +79,8 @@
     section h2 {
       font-family: 'Press Start 2P', monospace;
       font-size: 1.8rem;
-      color: var(--contard-yellow);
-      border-bottom: 2px solid var(--contard-yellow);
+      color: var(--secondary-color);
+      border-bottom: 2px solid var(--secondary-color);
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
     }
@@ -90,7 +91,7 @@
     }
     .announcement {
       background: rgba(57, 255, 20, 0.2);
-      border: 2px dashed var(--contard-yellow);
+      border: 2px dashed var(--secondary-color);
       padding: 15px;
       border-radius: 5px;
       text-align: center;

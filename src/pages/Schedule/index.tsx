@@ -1,7 +1,7 @@
-import { SCHEDULE } from '@/consts';
-import cn from 'classnames';
-import css from './style.module.scss';
 import { useEffect, useState } from 'preact/hooks';
+import cn from 'classnames';
+import { SCHEDULE } from '@/consts';
+import css from './style.module.scss';
 
 let lastDay = null;
 

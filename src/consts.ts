@@ -105,3 +105,36 @@ export const SCHEDULE: {
     channel: 1,
   },
 ].sort((a, b) => a.datetime - b.datetime);
+
+const getImages = (count: number, folder: string, format: string) => {
+  return new Array(count)
+    .fill(0)
+    .map((_, i) => `/images/vendors/${folder}/${i + 1}.${format}`);
+};
+
+export const VENDORS = [
+  {
+    title: 'Mare Wear1',
+    description: 'The final word on bespoke mare apparel.',
+    link: 'https://ko-fi.com/comforble/shop/',
+    images: getImages(3, 'marewear', 'webp'),
+  },
+  {
+    title: 'Mare Wear2',
+    description: 'The final word on bespoke mare apparel.',
+    link: 'https://ko-fi.com/comforble/shop/',
+    images: getImages(5, 'marewear', 'webp'),
+  },
+  {
+    title: 'Mare Wear3',
+    description: 'The final word on bespoke mare apparel.',
+    link: 'https://ko-fi.com/comforble/shop/',
+    images: getImages(5, 'marewear', 'webp'),
+  },
+  {
+    title: 'Mare Wear4',
+    description: 'The final word on bespoke mare apparel.',
+    link: 'https://ko-fi.com/comforble/shop/',
+    images: getImages(5, 'marewear', 'webp'),
+  },
+];
