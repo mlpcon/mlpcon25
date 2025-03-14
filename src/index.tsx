@@ -7,7 +7,6 @@ import {
 } from 'preact-iso';
 import { createContext } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import cn from 'classnames';
 
 import { Home } from '@/pages/Home';
 import { Vendors } from '@/pages/Vendors';
@@ -20,6 +19,7 @@ import { Footer } from './components/Footer';
 import contard from './assets/images/contard.png';
 import anon from './assets/images/anon.png';
 import '@/style.scss';
+import { withBase } from './utils';
 
 type Themes = 'light' | 'dark';
 
@@ -79,9 +79,9 @@ export function App() {
         <Header />
         <main>
           <Router>
-            <Route path='/' component={Home} />
-            <Route path='/schedule' component={Schedule} />
-            <Route path='/vendors' component={Vendors} />
+            <Route path={withBase('/')} component={Home} />
+            <Route path={withBase('/schedule')} component={Schedule} />
+            <Route path={withBase('/vendors')} component={Vendors} />
             <Route default component={NotFound} />
           </Router>
         </main>

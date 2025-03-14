@@ -11,3 +11,6 @@ export const getRandomItems = <T>(arr: T[], count: number) => {
 
   return copy.slice(0, count);
 };
+
+const BASE = '/mlpcon';
+export const withBase = (path: string) => `${BASE}${path}`;

@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'preact/hooks';
 import { Theme } from '@/index';
-import { getRandomItems } from '@/utils';
+import { getRandomItems, withBase } from '@/utils';
 import { VENDORS } from '@/consts';
 import css from './style.module.scss';
 
@@ -33,8 +33,9 @@ export function Home() {
         <section>
           <h2>How to Watch</h2>
           <p>
-            Check the <a href='/schedule'>Schedule</a> for live streaming times
-            and links. All events will be available live and as replays.
+            Check the <a href={withBase('/schedule')}>Schedule</a> for live
+            streaming times and links. All events will be available live and as
+            replays.
           </p>
         </section>
 
@@ -117,7 +118,7 @@ export function Home() {
             ))}
           </ul>
           <p>
-            Check the <a href='/vendors'>Vendors</a> page for more!
+            Check the <a href={withBase('/vendors')}>Vendors</a> page for more!
           </p>
         </div>
       </div>
@@ -163,8 +164,9 @@ export function Home() {
         <div class={css.cardContent}>
           <h2>How can I watch the streams?</h2>
           <p>
-            Check the <a href='/schedule'>Schedule</a> for live streaming times
-            and links. All events will be available live and as replays.
+            Check the <a href={withBase('/schedule')}>Schedule</a> for live
+            streaming times and links. All events will be available live and as
+            replays.
           </p>
         </div>
       </div>

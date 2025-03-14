@@ -27,6 +27,7 @@
     text-align: center;
     margin: 4rem 0;
     position: relative;
+    z-index: 10;
 
     .title {
       font-size: clamp(2rem, 8vw, 4rem);
@@ -100,6 +101,16 @@
   .washiTape.bottom {
     bottom: -45px;
   }
+
+  @media (max-width: 768px) {
+    .header {
+      nav a {
+        transform: rotate(0);
+        flex: 1 1 150px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 [data-theme='dark'] {
@@ -168,13 +179,6 @@
 @media (max-width: 768px) {
   .washiTape {
     animation: none;
-  }
-  .header {
-    nav a {
-      transform: rotate(0);
-      flex: 1 1 150px;
-      text-align: center;
-    }
   }
 }
 

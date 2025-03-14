@@ -1,3 +1,5 @@
+import { withBase } from './utils';
+
 export const SCHEDULE: {
   title: string;
   description: string;
@@ -109,7 +111,7 @@ export const SCHEDULE: {
 const getImages = (count: number, folder: string, format: string) => {
   return new Array(count)
     .fill(0)
-    .map((_, i) => `/images/vendors/${folder}/${i + 1}.${format}`);
+    .map((_, i) => withBase(`/images/vendors/${folder}/${i + 1}.${format}`));
 };
 
 export const VENDORS = [

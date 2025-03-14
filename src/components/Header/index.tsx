@@ -5,6 +5,7 @@ import { Theme } from '@/index';
 import moon from '@/assets/images/moon.png';
 import sun from '@/assets/images/sun.png';
 import css from './style.module.scss';
+import { withBase } from '@/utils';
 
 export function Header() {
   const { theme, setTheme } = useContext(Theme);
@@ -30,12 +31,12 @@ export function Header() {
       </div>
       <div class={cn(css.washiTape, css.top)}></div>
       {theme === 'dark' ? (
-        <a href={'/'} class={css.title}>
+        <a href={withBase('/')} class={css.title}>
           <span class={css.hors}>🐴</span> /mlp/con{' '}
           <span class={css.hors2}>🐴</span>
         </a>
       ) : (
-        <a class={css.title} href={'/'}>
+        <a class={css.title} href={withBase('/')}>
           /mlp/con
         </a>
       )}
@@ -43,8 +44,8 @@ export function Header() {
       <nav>
         <a href='#'>Host a Panel</a>
         <a href='#'>Be a Vendor</a>
-        <a href='/schedule'>Schedule</a>
-        <a href='/vendors'>Vendors</a>
+        <a href={withBase('/schedule')}>Schedule</a>
+        <a href={withBase('/vendors')}>Vendors</a>
         <a href='//boards.4chan.org/mlp/thread/42010989' target='_blank'>
           Current Thread
         </a>
