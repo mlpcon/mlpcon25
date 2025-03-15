@@ -12,7 +12,7 @@ export const getRandomItems = <T>(arr: T[], count: number) => {
   return copy.slice(0, count);
 };
 
-const BASE = '/mlpcon';
+const BASE = '';
 export const withBase = (path: string) => `${BASE}${path}`;
 
 export const formatMinutes = (minutes: number) => {

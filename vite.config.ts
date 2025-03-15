@@ -15,7 +15,7 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/mlpcon',
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
