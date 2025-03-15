@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import cn from 'classnames';
 import { SCHEDULE } from '@/consts';
 import css from './style.module.scss';
+import { formatMinutes } from '@/utils';
 
 let lastDay = null;
 
@@ -36,6 +37,7 @@ export const Schedule = () => {
             displaySeparator = true;
             lastDay = day;
           }
+          const dur = formatMinutes(item.duration);
 
           return (
             <>
@@ -57,8 +59,8 @@ export const Schedule = () => {
                     {date.toLocaleString(undefined, { timeZoneName: 'short' })}{' '}
                   </time>
                   | Duration:{' '}
-                  <time class='dt-duration' datetime='PT30M'>
-                    {item.duration} minutes
+                  <time class='dt-duration' datetime={dur.isoFormat}>
+                    {dur.readableFormat}
                   </time>
                 </div>
                 <div class={css.channel}>

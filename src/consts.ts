@@ -24,7 +24,7 @@ export const SCHEDULE: {
   {
     title: 'title 2(1)',
     description: 'WOW',
-    duration: 45,
+    duration: 125,
     datetime: 1741945753200,
     channel: 1,
   },
