@@ -2,7 +2,7 @@ name: Deploy with SCP
 
 on:
   push:
-    branches: [master]
+    branches: [dev]
 
 jobs:
   deploy:
@@ -28,4 +28,4 @@ jobs:
 
       - name: Deploy via SCP
         run: |
-          scp -P ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -r ./dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH_PROD }}
+          scp -P ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -r ./dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}
