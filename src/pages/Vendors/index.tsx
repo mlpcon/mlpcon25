@@ -6,6 +6,13 @@ export const Vendors = () => {
     <div class={css.wrapper}>
       <h1 class={css.title}>Vendors</h1>
       <div class={css.list}>
+        {VENDORS.length === 0 && (
+          <h3
+            style={{ textAlign: 'center', fontSize: '1.8rem', marginTop: 24 }}
+          >
+            Vendors list is not available yet.
+          </h3>
+        )}
         {VENDORS.map((item) => (
           <a
             target={'_blank'}
