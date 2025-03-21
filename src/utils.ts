@@ -1,6 +1,7 @@
-export const getRandomItems = <T>(arr: T[], count: number) => {
+export const getRandomItems = <T>(arr: T[], count: number): T[] => {
   if (count > arr.length) {
-    throw new Error('Not enough items in the array.');
+    console.warn('Not enough items in the array.');
+    return [];
   }
   const copy = [...arr];
 

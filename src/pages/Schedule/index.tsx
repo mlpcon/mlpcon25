@@ -25,6 +25,11 @@ export const Schedule = () => {
         ))}
       </div>
       <div class={css.list}>
+        {SCHEDULE.length === 0 && (
+          <h3 style={{ textAlign: 'center' }}>
+            Schedule is not available yet.
+          </h3>
+        )}
         {SCHEDULE.map((item) => {
           const date = new Date(item.datetime);
           const day = date.toLocaleString(undefined, {
