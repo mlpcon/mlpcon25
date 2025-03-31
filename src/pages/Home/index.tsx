@@ -26,7 +26,7 @@ export function Home() {
             <s>shit show</s> convention.
           </p>
           <div class={css.announcement}>
-            Event Dates: <b>TBD</b>
+            Event Dates: <b>July 4 - 6</b>
           </div>
         </section>
 
@@ -94,10 +94,7 @@ export function Home() {
       <div class={css.card}>
         <div class={css.cardContent}>
           <h2>When?</h2>
-          <p>
-            <b>TDB</b>
-          </p>
-          <p>Check the thread for updates</p>
+          <h2 class={css.big}>July 4 - 6</h2>
         </div>
       </div>
 

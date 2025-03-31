@@ -50,6 +50,13 @@
     color: var(--primary-color);
   }
 
+  .big {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem !important;
+    border-bottom: none !important;
+  }
+
   @media (max-width: 768px) {
     .wrapper {
       grid-template-columns: 1fr;
@@ -95,7 +102,7 @@
       padding: 15px;
       border-radius: 5px;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
   }
 
