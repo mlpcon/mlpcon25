@@ -24,8 +24,8 @@ jobs:
       - name: Add SSH Key
         uses: webfactory/ssh-agent@v0.7.0
         with:
-          ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
+          ssh-private-key: ${{ secrets.SERVER_SSH_KEY_PROD }}
 
       - name: Deploy via SCP
         run: |
-          scp -P ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -r ./dist/* ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH_PROD }}
+          scp -P ${{ secrets.SERVER_PORT_PROD }} -o StrictHostKeyChecking=no -r ./dist/* ${{ secrets.SERVER_USER_PROD }}@${{ secrets.SERVER_IP_PROD }}:${{ secrets.DEPLOY_PATH_PROD }}
