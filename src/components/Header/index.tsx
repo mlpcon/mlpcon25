@@ -46,7 +46,7 @@ export function Header() {
         <a href='https://docs.google.com/forms/d/e/1FAIpQLSfGdLXHs2lUzhSM4niCNEY6V4y-bNrMpgFIiY5tL09TbdP3nA/viewform'>Be a Vendor</a>
         <a href={withBase('/schedule')}>Schedule</a>
         <a href={withBase('/vendors')}>Vendors</a>
-        <a href='//boards.4chan.org/mlp/thread/42010989' target='_blank'>
+        <a href='//boards.4chan.org/mlp/thread/42160143' target='_blank'>
           Current Thread
         </a>
       </nav>
