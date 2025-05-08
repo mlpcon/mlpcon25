@@ -65,12 +65,13 @@ export function Home() {
         </section>
 
         <section>
-          <h2>Important Notices</h2>
-          <p>Please note the following prohibitions:</p>
-          <ul>
-            <li>No overthinking the horse agenda</li>
-            <li>No questioning the equine wisdom</li>
-          </ul>
+          <h2>I Want To Participate!</h2>
+          <p>
+            Got some merch to sell? <a target={'_blank'} class={css.applyVendor} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Apply to be a Vendor!</a>
+          </p>
+          <p>
+            Want broadcast your autism to the masses? <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Host a Panel!</a>
+          </p>
         </section>
       </div>
     );
@@ -117,6 +118,20 @@ export function Home() {
           <p>
             Check the <a href={withBase('/vendors')}>Vendors</a> page for more!
           </p>
+          <p>
+            <a target={'_blank'} class={css.applyVendor} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Apply to be a Vendor!</a>
+          </p>
+        </div>
+      </div>
+
+      <div class={css.card}>
+        <div class={css.cardContent}>
+          <h2>Get Involved</h2>
+          <p>
+            Do you like ponies? Do you have ideas you want to share with fellow anons? Or just want to celebrate the magic of the show?{' '}
+          </p>
+          <p> <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Host a Panel Now!<span class={css.orElse}> Or else.</span></a></p>
+
         </div>
       </div>
 

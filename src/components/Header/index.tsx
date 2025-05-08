@@ -42,11 +42,11 @@ export function Header() {
       )}
       <div class={cn(css.washiTape, css.bottom)}></div>
       <nav>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLScrNV3bt_Pdr58AzYx_6oGIZEWhsr1wFtAlUCLJAF0WHDe-rA/viewform'>Host a Panel</a>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLSfGdLXHs2lUzhSM4niCNEY6V4y-bNrMpgFIiY5tL09TbdP3nA/viewform'>Be a Vendor</a>
+        <a target={'_blank'} href='https://forms.gle/Ge5AXkJ4zU5VE6B39'>Host a Panel</a>
+        <a target={'_blank'} href='https://forms.gle/3FQuGsF9n4aUSapU7'>Be a Vendor</a>
         <a href={withBase('/schedule')}>Schedule</a>
         <a href={withBase('/vendors')}>Vendors</a>
-        <a href='//boards.4chan.org/mlp/thread/42160143' target='_blank'>
+        <a target={'_blank'} href='//boards.4chan.org/mlp/thread/42160143'>
           Current Thread
         </a>
       </nav>
