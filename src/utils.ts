@@ -19,14 +19,13 @@ export const withBase = (path: string) => `${BASE}${path}`;
 export const formatMinutes = (minutes: number) => {
   const hours = Math.floor(minutes / 60);
   const remainingMinutes = minutes % 60;
+  let readableFormat: string = "";
 
-  let readableFormat =
-    hours > 0
-      ? `${hours} ${
-          hours === 1 ? 'hour' : 'hours'
-        }, ${remainingMinutes} minutes`
-      : (remainingMinutes === 0) ? "" : `${remainingMinutes} minutes`;
+  if (minutes > 0)
+    readableFormat = `${hours > 0 ? ", "}${minutes} minutes`;
 
+  if (hours > 0)
+    readableFormat = `${hours} ${(hours === 1) ? "hour" : "hours"}${readableFormat}`;
   const isoFormat = `PT${hours > 0 ? hours + 'H' : ''}${remainingMinutes}M`;
 
   return { readableFormat, isoFormat };
