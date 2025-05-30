@@ -11,6 +11,7 @@ export const SCHEDULE: {
     link: string;
   }; // 1 | 2
 }[] = [
+	/*** FRIDAY ***/
 	{
 		title: "Opening Maremonies", 
 		description: "TBD", 
@@ -27,7 +28,10 @@ export const SCHEDULE: {
 	},
 	{
 		title: "PuzzlePone Time",
-		description: "Join other anons to solve cute mare puzzles while comfy pone music plays in the background!\nOr you can sit back and relax watching other anons work like zebras while you jam to horsey tunes!",
+		description: <>
+			Join other anons to solve cute mare puzzles while comfy pone music plays in the background!<br />
+			Or you can sit back and relax watching other anons work like zebras while you jam to horsey tunes!
+		</>,
 		duration: 180,
 		datetime: Date.parse("2025-07-04T17:00Z"),
 		channel: 1
@@ -88,9 +92,11 @@ export const SCHEDULE: {
 	},
 	{
 		title: "Foreign Mares at Your Door",
-		description: `Did you know that mares speak more than one language? That's right! There are even mares who don't speak english, and they want to meet you!
-So, relax on your wizard throne and watch multiple ESL pony content and discover different communities and cultures you might not have known about.
-Mares are beautiful! Even if you don't understand anything they're saying...`,
+		description: <>
+			Did you know that mares speak more than one language? That's right! There are even mares who don't speak english, and they want to meet you!<br />
+			So, relax on your wizard throne and watch multiple ESL pony content and discover different communities and cultures you might not have known about.<br />
+			Mares are beautiful! Even if you don't understand anything they're saying...
+		</>,
 		duration: 45,
 		datetime: Date.parse("2025-07-05T03:00Z"),
 		channel: 1
@@ -106,11 +112,72 @@ Mares are beautiful! Even if you don't understand anything they're saying...`,
 		datetime: Date.parse("2025-07-05T04:45Z"),
 		channel: 1
 	},
+	/*** SATURDAY ***/
+	{
+		title: "Random Mare Appreciation",
+		description: "There are so many background mares in the show that don't get a lot of attention, so we will let RNG highlight some of them for us! Who will we see? I don't know! Expect unscripted mareschizo autism.",
+		duration: 60,
+		datetime: Date.parse("2025-07-05T14:45Z"),
+		channel: 1
+	},
+	{
+		title: "/mlp/ the Antithology Volume 5",
+		description: "Come watch /mlp/'s FIFTH annual Antithology!",
+		duration: 90,
+		datetime: Date.parse("2025-07-05T16:00Z"),
+		channel: 1
+	},
+	{
+		title: "Fluffy pony dating SIM",
+		description: "Today, we'll finish what we started. Come join us as I try to speedrun the fluffy pony dating sim that we saw in the gamejam last /mlp/con; watch me try to find a way to fuck all six of these bastards.",
+		duration: 90,
+		datetime: Date.parse("2025-07-05T17:45Z"),
+		channel: 1
+	},
+	{
+		title: "Derpy Doodles feat. QuotePony, MouseuArt, Pabbley, TheBatFang",
+		description: "It's a dastardly draw off with pony themed prompts. Join along by posting your art in the thread!",
+		duration: 180,
+		datetime: Date.parse("2025-07-05T21:00Z"),
+		channel: 1
+	},
+	{
+		title: "12 Angry Mares - PONY COURT",
+		description: "For all the debates we have over who was in the wrong or how a pony should be perceived, we've never stopped to ask what Equestrian law has to say! At pony court, these disputes shall at long last be settled once and for all (real!)! Prepare a case, find an anon to argue it against (you'll have to decide who's the prosecution and who's the defense), and make the whole board know the truth. The viewers will act as the jury, voting in a poll at the end of each case to decide the winner. Evidence in the form of photos/videos/etc. is highly encouraged! This might be a total disaster, but that should be fun, too! Note: this is basically just autistic debates with a funny coating over it. Don't sweat it if you don't wanna go full court autism (but it's cool if you do)!",
+		duration: 60,
+		datetime: Date.parse("2025-07-06T00:15Z"),
+		channel: 1
+	},
+	{
+		title: "Blondie's Raucous Regalings: Real Edition",
+		description: <>
+			You know what goes well with stories? Life.<br />
+			You know what goes better with stories? Death.<br />
+			Let loose the mares of war and delve into this deleterious diary dated by antiquated deeds.
+		</>,
+		duration: 90,
+		datetime: Date.parse("2025-07-06T00:45Z"),
+		channel: 2
+	},
+	{
+		title: "Marecurial Sonority Mk. II",
+		description: "A conglomareation of operatic maredulation, telecasting mareciferously via ARPANET to your mare-brain. It's maresic! A lot of it.",
+		duration: 237,
+		datetime: Date.parse("2025-07-06T02:00Z"),
+		channel: 1
+	},
+	{
+		title: "Blondie's Vacuous Vulgarities",
+		description: "Malicious mares make men mald, lustful lads lurk to lay lemon-colored ladies. Join us on an adventure positively dripping with lime slime, turpentine and negativity.",
+		duration: 90,
+		datetime: Date.parse("2025-07-06T02:45Z"),
+		channel: 1
+	},
 	// {
 	// 	title: "",
 	// 	description: "",
 	// 	duration: 45,
-	// 	datetime: Date.parse("2025-07-05T12:00Z"),
+	// 	datetime: Date.parse("2025-07-06T12:00Z"),
 	// 	channel: 1
 	// },
   // {
