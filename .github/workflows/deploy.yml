@@ -30,6 +30,12 @@ jobs:
         run: |
           scp -P ${{ secrets.SERVER_PORT_PROD }} -o StrictHostKeyChecking=no -r ./dist/* ${{ secrets.SERVER_USER_PROD }}@${{ secrets.SERVER_IP_PROD }}:${{ secrets.DEPLOY_PATH_PROD }}
 
-      - name: Send Discord Notification
+      - name: Discord Notification (Success)
+        if: success()
         run: |
-          curl -H "Content-Type: application/json" -d '{"content": "SCP deployment completed successfully!"}' ${{ secrets.DISCORD_WEBHOOK_URL }}
+          curl -H "Content-Type: application/json" -d '{"content": "SCP Deployment Successful! 🎉"}' ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Discord Notification (Failure)
+        if: failure()
+        run: |
+          curl -H "Content-Type: application/json" -d '{"content": "SCP Deployment Failed! ❌ Check logs for details."}' ${{ secrets.DISCORD_WEBHOOK_URL }}
