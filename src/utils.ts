@@ -21,8 +21,8 @@ export const formatMinutes = (minutes: number) => {
   const remainingMinutes = minutes % 60;
   let readableFormat: string = "";
 
-  if (minutes > 0)
-    readableFormat = `${(hours > 0) ? ", " : ""}${minutes} minutes`;
+  if (remainingMinutes > 0)
+    readableFormat = `${(hours > 0) ? ", " : ""}${remainingMinutes} minutes`;
 
   if (hours > 0)
     readableFormat = `${hours} ${(hours === 1) ? "hour" : "hours"}${readableFormat}`;
