@@ -25,7 +25,7 @@ export const formatMinutes = (minutes: number) => {
       ? `${hours} ${
           hours === 1 ? 'hour' : 'hours'
         }, ${remainingMinutes} minutes`
-      : `${remainingMinutes} minutes`;
+      : (remainingMinutes === 0) ? "" : `${remainingMinutes} minutes`;
 
   const isoFormat = `PT${hours > 0 ? hours + 'H' : ''}${remainingMinutes}M`;
 
