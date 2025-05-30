@@ -22,7 +22,7 @@ export const formatMinutes = (minutes: number) => {
   let readableFormat: string = "";
 
   if (minutes > 0)
-    readableFormat = `${hours > 0 ? ", "}${minutes} minutes`;
+    readableFormat = `${(hours > 0) ? ", " : ""}${minutes} minutes`;
 
   if (hours > 0)
     readableFormat = `${hours} ${(hours === 1) ? "hour" : "hours"}${readableFormat}`;
