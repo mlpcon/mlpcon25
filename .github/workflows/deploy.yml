@@ -29,3 +29,7 @@ jobs:
       - name: Deploy via SCP
         run: |
           scp -P ${{ secrets.SERVER_PORT_PROD }} -o StrictHostKeyChecking=no -r ./dist/* ${{ secrets.SERVER_USER_PROD }}@${{ secrets.SERVER_IP_PROD }}:${{ secrets.DEPLOY_PATH_PROD }}
+
+      - name: Send Discord Notification
+        run: |
+          curl -H "Content-Type: application/json" -d '{"content": "SCP deployment completed successfully!"}' ${{ secrets.DISCORD_WEBHOOK_URL }}
