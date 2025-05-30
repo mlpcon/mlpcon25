@@ -73,12 +73,46 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
-		title: "",
-		description: "",
+		title: "Trust the process",
+		description: "i dont know fuck you",
 		duration: 45,
-		datetime: Date.parse("2025-07-04T12:00Z"),
+		datetime: Date.parse("2025-07-05T00:45Z"),
 		channel: 1
 	},
+	{
+		title: "Saturday Show Premiere",
+		description: "Premiering of the Pilot for the Saturday Show.",
+		duration: 60,
+		datetime: Date.parse("2025-07-05T01:45Z"),
+		channel: 1
+	},
+	{
+		title: "Foreign Mares at Your Door",
+		description: `Did you know that mares speak more than one language? That's right! There are even mares who don't speak english, and they want to meet you!
+So, relax on your wizard throne and watch multiple ESL pony content and discover different communities and cultures you might not have known about.
+Mares are beautiful! Even if you don't understand anything they're saying...`,
+		duration: 45,
+		datetime: Date.parse("2025-07-05T03:00Z"),
+		channel: 1
+	},
+	{
+		title: "Lesson Zero: A Plot Analysis",
+		description: <>
+			What's the sexiest episode of <cite>My Little Pony: Friendship is Magic</cite>?  Lesson Zero!<br />
+			Let's actively watch this episode and discuss it at key points.<br />
+			Togehter, we'll appreciate the plot(s) of this best episode.<br />
+		</>,
+		duration: 60,
+		datetime: Date.parse("2025-07-05T04:45Z"),
+		channel: 1
+	},
+	// {
+	// 	title: "",
+	// 	description: "",
+	// 	duration: 45,
+	// 	datetime: Date.parse("2025-07-05T12:00Z"),
+	// 	channel: 1
+	// },
   // {
   //   title: 'title',
   //   description: <>
