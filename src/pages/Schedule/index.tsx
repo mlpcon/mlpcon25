@@ -70,14 +70,21 @@ export const Schedule = () => {
                 </div>
                 <div class={css.channel}>
                   Streaming to{' '}
-                  <a
+                 {typeof item.channel === 'number'? <a
                     class='u-url'
                     href={`//cytu.be/r/mlp-con${item.channel === 2 ? '2' : ''}`}
                     rel='external noopener'
                     target='_blank'
                   >
                     CyTube {item.channel}
-                  </a>
+                  </a>: <a
+                    class='u-url'
+                    href={item.channel.link}
+                    rel='external noopener'
+                    target='_blank'
+                  >
+                    {item.channel.name}
+                  </a>}
                 </div>
                 <div class={cn(css.desc, 'e-content')}>{item.description}</div>
               </section>
