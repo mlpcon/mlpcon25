@@ -50,7 +50,7 @@ export const SCHEDULE: {
 		title: "Wetbrain: The Boozy Art Request Stream!",
 		description: <>
 			Welcome to Wetbrain, the interactive and boozy art request stream game where artists draw and suffer for your enjoyment!
-			<p>
+			<p />
 			The rules are simple:
 			<ul style="list-style-type: '\3e';">
 				<li>Selection of tags appear</li>
