@@ -173,13 +173,31 @@ export const SCHEDULE: {
 		datetime: Date.parse("2025-07-06T02:45Z"),
 		channel: 1
 	},
-	// {
-	// 	title: "",
-	// 	description: "",
-	// 	duration: 45,
-	// 	datetime: Date.parse("2025-07-06T12:00Z"),
-	// 	channel: 1
-	// },
+	/*** SUNDAY ***/
+	{
+		title: "Traditional art draw panel",
+		description: "You know the drill. You give me prompts, I draw mares.",
+		duration: 120,
+		datetime: Date.parse("2025-07-06T13:00Z"),
+		channel: 1
+	},
+	{
+		title: "Applejack Appreciation Appointment",
+		description: "A selection of episodes, music and videos dedicated to the prettiest, most hardworking, honest mare to ever wear a cowboy hat, curated by the anons on /aj/",
+		duration: 90,
+		datetime: Date.parse("2025-07-06T15:15Z"),
+		channel: 1
+	},
+	{
+		title: "Gamejam showcase: Your choice edition!",
+		description: <>
+			Welcome to the fifth /mlp/ game jam! We'll once again be taking a look st the submitted games from our VERY talented game devs in the board.<br />
+			This time around I'll be letting (You) chose the theme for this little jam! That's right! We'll be doing a theme chosen by the board! So go on ahead and see if it's not too late to make your voice heard! And if the theme is selected, then feel free to participate in the jam! Check the catalog by typing "game jam" in the search bar to find both threads!
+		</>,
+		duration: 120,
+		datetime: Date.parse("2025-07-06T22:00Z"),
+		channel: 1
+	},
   // {
   //   title: 'title',
   //   description: <>
