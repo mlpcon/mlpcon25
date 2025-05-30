@@ -49,9 +49,9 @@ export const SCHEDULE: {
 	{
 		title: "Wetbrain: The Boozy Art Request Stream!",
 		description: <>
-			Welcome to Wetbrain, the interactive and boozy art request stream game where artists draw and suffer for your enjoyment!
-			<p />
-			The rules are simple:
+			Welcome to Wetbrain, the interactive and boozy art request stream game where artists draw and suffer for your enjoyment!<br />
+			<br />
+			The rules are simple:<br />
 			<ul style="list-style-type: '\3e';">
 				<li>Selection of tags appear</li>
 				<li>Artist remove a tag each that they dont want to draw</li>
@@ -61,6 +61,7 @@ export const SCHEDULE: {
 				<li>Losers take a shot of hard alchohol</li>
 				<li>Repeat until the last round or until everyone drops out</li>
 			</ul>
+			<br />
 			<ul style="list-style-type: '\3e';">
 				<li>Anyone can drop out any time for any reason (like being super wasted)</li>
 				<li>Donations are encouraged! Every cent will be donated to Fallen Oak Equine Rescue and Rehabilitation!</li>
