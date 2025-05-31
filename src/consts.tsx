@@ -189,6 +189,13 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
+		title: "Russian Fanfiction overview",
+		description: "Do (you) like MARES? What about stories with MARES? Tune in to hear about the best and the worst examples of Russian pony fanfiction! What to expect - summaries of popular stories and the stories i liked, my personal opinions regarding those fanfics and the fruits of a 1000 hours spent in MS Paint!",
+		duration: 120,
+		datetime: Date.parse("2025-07-06T19:45Z"),
+		channel: 1
+	},
+	{
 		title: "Gamejam showcase: Your choice edition!",
 		description: <>
 			Welcome to the fifth /mlp/ game jam! We'll once again be taking a look st the submitted games from our VERY talented game devs in the board.<br />
