@@ -232,24 +232,26 @@ const getImages = (count: number, folder: string, format: string) => {
 		.map((_, i) => withBase(`/images/vendors/${folder}/${i + 1}.${format}`));
 };
 
+const defaultImage: Array<string> = ["//cdn.twibooru.org/img/view/2022/10/3/2803949__safe_artist-colon-valeidem_derpibooru+import_lyra+heartstrings_pony_unicorn_image_jpeg_numget_sketch_solo_wat.jpeg"];
+
 export const VENDORS = [
 	{
 		title: "Cheyenne",
 		description: "Pony items",
 		link: null,
-		images: new Array<string>()
+		images: defaultImage
 	},
 	{
 		title: "Sigilponies",
 		description: "Snowpity Charger pre-orders \\oco/",
 		link: "//sigil.horse/",
-		images: new Array<string>()
+		images: defaultImage
 	},
 	{
 		title: "Rocket's Equine Outpost",
 		description: "Pins, shoe charms, wall scrolls, stickers",
 		link: "//ko-fi.com/rocketlawnchair/shop",
-		images: new Array<string>()
+		images: defaultImage
 	},
 	// {
 	//   title: 'title',
