@@ -73,7 +73,7 @@ export const Schedule = () => {
                 <h3 class='p-name'>{item.title}</h3>
                 <div class={css.date}>
                   <time class='dt-start' datetime={date.toISOString()}>
-                    {date.toLocaleString(undefined, { timeZoneName: 'short' })}{' '}
+                    {date.toLocaleString(undefined, { year: "numeric", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", timeZoneName: "short" })}{' '}
                   </time>
                   | Duration:{' '}
                   <time class='dt-duration' datetime={dur.isoFormat}>
