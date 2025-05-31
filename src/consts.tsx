@@ -233,6 +233,24 @@ const getImages = (count: number, folder: string, format: string) => {
 };
 
 export const VENDORS = [
+	{
+		title: "Cheyenne",
+		description: "Pony items",
+		link: null,
+		images: new Array<string>()
+	},
+	{
+		title: "Sigilponies",
+		description: "Snowpity Charger pre-orders \\oco/",
+		link: "//sigil.horse/",
+		images: new Array<string>()
+	},
+	{
+		title: "Rocket's Equine Outpost",
+		description: "Pins, shoe charms, wall scrolls, stickers",
+		link: "//ko-fi.com/rocketlawnchair/shop",
+		images: new Array<string>()
+	},
 	// {
 	//   title: 'title',
 	//   description: 'description.',
