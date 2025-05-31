@@ -220,6 +220,8 @@ export const SCHEDULE: {
   // },
 ].sort((a, b) => a.datetime - b.datetime);
 
+const vendorsImageDir: string = "/images/vendors/";
+
 /**
  * @returns array of image paths
  * @param count - number of images
@@ -229,10 +231,10 @@ export const SCHEDULE: {
 const getImages = (count: number, folder: string, format: string) => {
 	return new Array(count)
 		.fill(0)
-		.map((_, i) => withBase(`/images/vendors/${folder}/${i + 1}.${format}`));
+		.map((_, i) => withBase(`${vendorsImageDir}${folder}/${i + 1}.${format}`));
 };
 
-const defaultImage: Array<string> = ["/images/vendors/default.avif"];
+const defaultImage: Array<string> = [`${vendorsImageDir}default.avif`];
 
 export const VENDORS = [
 	{
@@ -244,8 +246,8 @@ export const VENDORS = [
 	{
 		title: "Sigilponies",
 		description: "Snowpity Charger pre-orders \\oco/",
-		link: "//sigil.horse/",
-		images: defaultImage
+		link: "//www.sigil.horse/",
+		images: [`${vendorsImageDir}sigil.avif`]
 	},
 	{
 		title: "Rocket's Equine Outpost",
