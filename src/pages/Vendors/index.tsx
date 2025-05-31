@@ -13,26 +13,29 @@ export const Vendors = () => {
             Vendors list is not available yet.
           </h3>
         )}
-        {VENDORS.map((item) => (
-          <a
-            target={'_blank'}
-            href={item.link}
-            class={css.item}
-            key={item.title}
-          >
-            <img class={css.previewImg} src={item.images[0]} alt={item.title} />
+        {VENDORS.map((item) => {
+          const moreThanOne = item.images.length > 1
+          return (
+            <a
+              target={'_blank'}
+              href={item.link}
+              class={`${css.item} ${moreThanOne ? css.hover : ''}`}
+              key={item.title}
+            >
+              <img class={css.previewImg} src={item.images[0]} alt={item.title} />
 
-            <div class={css.content}>
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-              <div class={css.imgWrapper}>
-                {item.images.slice(1).map((image) => (
-                  <img key={image} src={image} alt={item.title} />
-                ))}
+              <div class={css.content}>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+                <div class={css.imgWrapper}>
+                  {item.images.slice(-4).map((image) => (
+                    <img key={image} src={image} alt={item.title} />
+                  ))}
+                </div>
               </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          )
+        })}
       </div>
     </div>
   );
