@@ -28,7 +28,7 @@ export const Vendors = () => {
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
                 <div class={css.imgWrapper}>
-                  {item.images.slice(-4).map((image) => (
+                  {item.images.slice(item.images.length > 4 ? 1 : -4).map((image) => (
                     <img key={image} src={image} alt={item.title} />
                   ))}
                 </div>
