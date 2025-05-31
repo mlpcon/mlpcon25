@@ -1,13 +1,18 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import cn from 'classnames';
 import { SCHEDULE } from '@/consts';
 import css from './style.module.scss';
 import { formatMinutes } from '@/utils';
 
-let lastDay = null;
+const nyHourFormatter = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'America/New_York',
+  hour: '2-digit',
+  hour12: false,
+});
 
 export const Schedule = () => {
   const [days, setDays] = useState<string[]>([]);
+  const lastDay = useRef<string>(null)
 
   useEffect(() => {
     const arr = document.querySelectorAll<HTMLDivElement>(`.${css.separator}`);
@@ -30,17 +35,24 @@ export const Schedule = () => {
             Schedule is not available yet.
           </h3>
         )}
-        {SCHEDULE.map((item) => {
+        {SCHEDULE.map((item, i) => {
           const date = new Date(item.datetime);
-          const day = date.toLocaleString(undefined, {
+
+          const nyHourString = nyHourFormatter.format(date);
+          const nyHour = Number(nyHourString);
+
+          const day = new Date(item.datetime).toLocaleString('en-US', {
             day: '2-digit',
             month: 'long',
             weekday: 'long',
           });
           let displaySeparator = false;
-          if (!lastDay || lastDay !== day) {
+          if (!lastDay.current || (nyHour >= 8 && lastDay.current !== day)) {
             displaySeparator = true;
-            lastDay = day;
+            lastDay.current = day;
+          }
+          if (i === SCHEDULE.length - 1) {
+            lastDay.current = null
           }
           const dur = formatMinutes(item.duration);
 
@@ -70,14 +82,14 @@ export const Schedule = () => {
                 </div>
                 <div class={css.channel}>
                   Streaming to{' '}
-                 {typeof item.channel === 'number'? <a
+                  {typeof item.channel === 'number' ? <a
                     class='u-url'
                     href={`//cytu.be/r/mlp-con${item.channel === 2 ? '2' : ''}`}
                     rel='external noopener'
                     target='_blank'
                   >
                     CyTube {item.channel}
-                  </a>: <a
+                  </a> : <a
                     class='u-url'
                     href={item.channel.link}
                     rel='external noopener'
