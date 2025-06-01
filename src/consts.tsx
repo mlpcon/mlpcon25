@@ -240,7 +240,7 @@ export const VENDORS = [
 	{
 		title: "Cheyenne",
 		description: "Pony items",
-		link: null,
+		link: "//youtu.be/o7aBY2sqbEI?si=XEVKrSnFdGyTN8yL",
 		images: defaultImage
 	},
 	{
