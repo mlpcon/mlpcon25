@@ -22,8 +22,7 @@ export function Home() {
         <section>
           <h2>What is it?</h2>
           <p>
-            Anons from the /mlp/ board got together to host their own online{' '}
-            <s>shit show</s> convention.
+            Anons from the /mlp/ board will get together to host their own online <s>shit show</s> convention. 
           </p>
           <div class={css.announcement}>
             Event Dates: <b>July 4 - 6</b>
@@ -36,6 +35,16 @@ export function Home() {
             Check the <a href={withBase('/schedule')}>Schedule</a> for live
             streaming times and links. All events will be available live and as
             replays.
+          </p>
+        </section>
+
+        <section>
+          <h2>I Want To Participate!</h2>
+          <p>
+            Got some merch to sell? <a target={'_blank'} class={css.applyVendor} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Apply to be a Vendor!</a>
+          </p>
+          <p>
+            Want broadcast your autism to the masses? <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Host a Panel!</a>
           </p>
         </section>
 
@@ -63,16 +72,6 @@ export function Home() {
             </li>
           </ul>
         </section>
-
-        <section>
-          <h2>I Want To Participate!</h2>
-          <p>
-            Got some merch to sell? <a target={'_blank'} class={css.applyVendor} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Apply to be a Vendor!</a>
-          </p>
-          <p>
-            Want broadcast your autism to the masses? <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Host a Panel!</a>
-          </p>
-        </section>
       </div>
     );
   }
@@ -85,9 +84,7 @@ export function Home() {
         <div class={css.cardContent}>
           <h2>What is it?</h2>
           <p>
-            Anons from the /mlp/ board got together to host their own online{' '}
-            <s>shit show</s> convention. With over 1,640 anons attended at least
-            some portion of the festivities the weekend of June 28-30, 2024.
+            Anons from the /mlp/ board will get together to host their own online <s>shit show</s> convention. 
           </p>
         </div>
       </div>
@@ -137,6 +134,17 @@ export function Home() {
 
       <div class={css.card}>
         <div class={css.cardContent}>
+          <h2>How can I watch the streams?</h2>
+          <p>
+            Check the <a href={withBase('/schedule')}>Schedule</a> for live
+            streaming times and links. All events will be available live and as
+            replays.
+          </p>
+        </div>
+      </div>
+
+      <div class={css.card}>
+        <div class={css.cardContent}>
           <h2>What happened before?</h2>
           <p>
             If you're looking for prior year's /mlp/ con sites, they've now been
@@ -169,17 +177,6 @@ export function Home() {
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div class={css.card}>
-        <div class={css.cardContent}>
-          <h2>How can I watch the streams?</h2>
-          <p>
-            Check the <a href={withBase('/schedule')}>Schedule</a> for live
-            streaming times and links. All events will be available live and as
-            replays.
-          </p>
         </div>
       </div>
     </div>
