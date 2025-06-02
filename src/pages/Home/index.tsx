@@ -44,7 +44,7 @@ export function Home() {
             Got some merch to sell? <a target={'_blank'} class={css.applyVendor} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Apply to be a Vendor!</a>
           </p>
           <p>
-            Want broadcast your autism to the masses? <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Host a Panel!</a>
+            Want broadcast your autism to the masses? <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/Ge5AXkJ4zU5VE6B39'}>Host a Panel!</a>
           </p>
         </section>
 
@@ -127,7 +127,7 @@ export function Home() {
           <p>
             Do you like ponies? Do you have ideas you want to share with fellow anons? Or just want to celebrate the magic of the show?{' '}
           </p>
-          <p> <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Host a Panel Now!<span class={css.orElse}> Or else.</span></a></p>
+          <p> <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/Ge5AXkJ4zU5VE6B39'}>Host a Panel Now!<span class={css.orElse}> Or else.</span></a></p>
 
         </div>
       </div>
