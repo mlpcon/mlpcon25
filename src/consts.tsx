@@ -128,6 +128,13 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
+		title: "Fallen Oak Equine Rescue ",
+		description: "Horsey updates, trivia and just horsin around ",
+		duration: 90,
+		datetime: Date.parse("2025-07-05T17:00Z"),
+		channel: 2
+	},
+	{
 		title: "Fluffy pony dating SIM",
 		description: "Today, we'll finish what we started. Come join us as I try to speedrun the fluffy pony dating sim that we saw in the gamejam last /mlp/con; watch me try to find a way to fuck all six of these bastards.",
 		duration: 90,
