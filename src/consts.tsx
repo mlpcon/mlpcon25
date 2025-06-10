@@ -227,14 +227,14 @@ export const SCHEDULE: {
 			How it works: I will draw each scene and situation on the fly, punctuated with brief "loading screens". Each major decision will be decided by a combination of polling, dice rolls, and dealer's choice amongst audience spam, each getting our heroine to her lofty goal of, well, something. Anything goes, from funny memes and rats to foalphilic accusations and magical filly transformations.
 		</>,
 		duration: 120,
-		datetime: Date.parse("2025-07-07T00:15Z"),
+		datetime: Date.parse("2025-07-07T01:15Z"),
 		channel: 1
 	},
 	{
 		title: "RarityFest",
 		description: "Get ready with your best outfit and your :dance: emotes, we'll listen to a playlist of Rarity's songs from the fandom, from classics to underrated gems.",
 		duration: 90,
-		datetime: Date.parse("2025-07-07T03:30Z"),
+		datetime: Date.parse("2025-07-07T04:30Z"),
 		channel: 1
 	},
   // {
