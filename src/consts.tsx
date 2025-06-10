@@ -189,6 +189,13 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
+		title: "Worms Armageddon Tournament: Good vs Evil",
+		description: "Chat members will submit images to be used for making custom maps, choose what characters populate the sides of Good and Evil, then have absolutely no further involvement as two AI teams duke it out and blow up your creations for control over nothing. Featuring the best software 1999 had to offer: Worms Armageddon. ",
+		duration: 150,
+		datetime: Date.parse("2025-07-06T17:00Z"),
+		channel: 1
+	},
+	{
 		title: "Russian Fanfiction overview",
 		description: "Do (you) like MARES? What about stories with MARES? Tune in to hear about the best and the worst examples of Russian pony fanfiction! What to expect - summaries of popular stories and the stories i liked, my personal opinions regarding those fanfics and the fruits of a 1000 hours spent in MS Paint!",
 		duration: 120,
@@ -232,6 +239,7 @@ export const SCHEDULE: {
 ].sort((a, b) => a.datetime - b.datetime);
 
 const vendorsImageDir: string = "/images/vendors/";
+//https://mlpcon.online/cdn-cgi/image/format=auto/https://mlpcon.online/images/vendors/contard-D1laCqa4.png
 
 /**
  * @returns array of image paths
