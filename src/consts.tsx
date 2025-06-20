@@ -142,6 +142,13 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
+		title: "Hangmare",
+		description: "silly games of hangman (and more) with a pony twist,",
+		duration: 75,
+		datetime: Date.parse("2025-07-05T19:30Z"),
+		channel: 1
+	},
+	{
 		title: "Derpy Doodles feat. QuotePony, MouseuArt, Pabbley, TheBatFang",
 		description: "It's a dastardly draw off with pony themed prompts. Join along by posting your art in the thread!",
 		duration: 180,
