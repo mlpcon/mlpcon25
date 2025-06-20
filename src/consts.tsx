@@ -312,6 +312,23 @@ export const VENDORS = [
 		link: "//ko-fi.com/rocketlawnchair/shop",
 		images: getImages(7, "rockets-equine-outpost", "avif")
 	},
+	{
+		title: "OTL Crafts",
+		description: <>
+			LEGO ponies, custom order LEGO ponies (if available), cute or funny stickers, and traditional art commissions. <a href="https://youtu.be/OX8MTUWLSjE">https://youtu.be/OX8MTUWLSjE</a>
+		</>,
+		link: "//ko-fi.com/otlcrafts",
+		images: defaultImage
+	},
+	{
+		title: "soapone",
+		description: <>
+			Pony themed: Soap, Fragrance spray, Oil, and incense. Incense isn't listed on website, but I normally give it away for any soap order made; ask for it in the comment section of the order form. Similarly, I can add any fragrance to the oil, just ask for it in the comment section.<br />
+			I love all the autistic sperging (you) puke out in the comment box of the order form. It helps validates my own autistic sperging.
+		</>,
+		link: "//snowpity.shop/",
+		images: defaultImage
+	},
 	// {
 	//   title: 'title',
 	//   description: 'description.',
