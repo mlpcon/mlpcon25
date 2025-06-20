@@ -142,6 +142,16 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
+		title: "Detailed pony vectors in inkscape",
+		description: "Lineless soft shading with fur as a vector image? No problem. There are many little things in inkscape to make incredible pony vector art with inkscape. May also include rants, why naturally made soap is healthy for skin, and probably something about griffins.",
+		duration: 120,
+		datetime: Date.parse("2025-07-05T18:30Z"),
+		channel: {
+			name: "Unassigned",
+			link: "/"
+		}
+	},
+	{
 		title: "Hangmare",
 		description: "silly games of hangman (and more) with a pony twist,",
 		duration: 75,
