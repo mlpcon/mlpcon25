@@ -149,6 +149,13 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
+		title: "HLVRAIMLP: BEST OF",
+		description: "A compilation of the best of clips of all the past HLVRAIMLP panels since there will be no HLVRAIMLP panel for this con ucu.",
+		duration: 180,
+		datetime: Date.parse("2025-07-05T19:30Z"),
+		channel: 2
+	},
+	{
 		title: "Derpy Doodles feat. QuotePony, MouseuArt, Pabbley, TheBatFang",
 		description: "It's a dastardly draw off with pony themed prompts. Join along by posting your art in the thread!",
 		duration: 180,
