@@ -259,7 +259,8 @@ export const SCHEDULE: {
   // },
 ].sort((a, b) => a.datetime - b.datetime);
 
-const vendorsImageDir: string = "/images/vendors/";
+// const vendorsImageDir: string = "/images/vendors/";
+const vendorsImageDir: string = "/cdn-cgi/image/format=auto/https://mlpcon.online/images/vendors/";
 //https://mlpcon.online/cdn-cgi/image/format=auto/https://mlpcon.online/images/vendors/contard-D1laCqa4.png
 
 /**
