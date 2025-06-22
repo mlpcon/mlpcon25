@@ -316,7 +316,7 @@ export const VENDORS = [
 		title: "Mare Fair",
 		description: "We are a convention. Ran by dipshits",
 		link: "//marefair.org/",
-		images: defaultImage
+		images: [`${vendorsImageDir}mare-fair.png`]
 	},
 	// {
 	//   title: 'title',
