@@ -310,7 +310,7 @@ export const VENDORS = [
 			I love all the autistic sperging (you) puke out in the comment box of the order form. It helps validates my own autistic sperging.
 		</>,
 		link: "//snowpity.shop/",
-		images: defaultImage
+		images: [`${vendorsImageDir}soapone.jpg`]
 	},
 	{
 		title: "Mare Fair",
