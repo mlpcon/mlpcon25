@@ -291,7 +291,7 @@ const getImages = (count: number, folder: string, format: string) => {
 		.map((_, i) => withBase(`${vendorsImageDir}${folder}/${i + 1}.${format}`));
 };
 
-const defaultImage: Array<string> = [`${vendorsImageDir}default.avif`];
+const defaultImage: Array<string> = [`${vendorsImageDir}default.jpeg`];
 
 export const VENDORS = [
 	{
