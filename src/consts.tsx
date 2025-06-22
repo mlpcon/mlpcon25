@@ -329,6 +329,12 @@ export const VENDORS = [
 		link: "//snowpity.shop/",
 		images: defaultImage
 	},
+	{
+		title: "Mare Fair",
+		description: "We are a convention. Ran by dipshits",
+		link: "//marefair.org/",
+		images: defaultImage
+	},
 	// {
 	//   title: 'title',
 	//   description: 'description.',
