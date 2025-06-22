@@ -301,7 +301,7 @@ export const VENDORS = [
 			LEGO ponies, custom order LEGO ponies (if available), cute or funny stickers, and traditional art commissions. <a href="https://youtu.be/OX8MTUWLSjE">https://youtu.be/OX8MTUWLSjE</a>
 		</>,
 		link: "//ko-fi.com/otlcrafts",
-		images: defaultImage
+		images: getImages(10, "otl-crafts", "png")
 	},
 	{
 		title: "soapone",
