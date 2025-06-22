@@ -84,13 +84,6 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
-		title: "Saturday Show Premiere",
-		description: "Premiering of the Pilot for the Saturday Show.",
-		duration: 60,
-		datetime: Date.parse("2025-07-05T01:45Z"),
-		channel: 1
-	},
-	{
 		title: "Foreign Mares at Your Door",
 		description: <>
 			Did you know that mares speak more than one language? That's right! There are even mares who don't speak english, and they want to meet you!<br />
