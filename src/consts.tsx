@@ -44,13 +44,6 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
-		title: "dicemares",
-		description: "I will play dice mares",
-		duration: 45,
-		datetime: Date.parse("2025-07-04T22:00Z"),
-		channel: 1
-	},
-	{
 		title: "Wetbrain: The Boozy Art Request Stream!",
 		description: <>
 			Welcome to Wetbrain, the interactive and boozy art request stream game where artists draw and suffer for your enjoyment!<br />
