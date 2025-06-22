@@ -37,6 +37,13 @@ export const SCHEDULE: {
 		channel: 1
 	},
 	{
+		title: "Detailed pony vectors in inkscape",
+		description: "Lineless soft shading with fur as a vector image? No problem. There are many little things in inkscape to make incredible pony vector art with inkscape. May also include rants, why naturally made soap is healthy for skin, and probably something about griffins.",
+		duration: 120,
+		datetime: Date.parse("2025-07-04T20:00Z"),
+		channel: 2
+	},
+	{
 		title: "Fucking Around Interdimensionally",
 		description: 'A discussion on "astral projection" to equestria,  my experiments with it, phenomena relating to it... As well as a small guided projection session, and a Q&A. ',
 		duration: 75,
@@ -126,16 +133,6 @@ export const SCHEDULE: {
 		duration: 90,
 		datetime: Date.parse("2025-07-05T17:45Z"),
 		channel: 1
-	},
-	{
-		title: "Detailed pony vectors in inkscape",
-		description: "Lineless soft shading with fur as a vector image? No problem. There are many little things in inkscape to make incredible pony vector art with inkscape. May also include rants, why naturally made soap is healthy for skin, and probably something about griffins.",
-		duration: 120,
-		datetime: Date.parse("2025-07-05T18:30Z"),
-		channel: {
-			name: "Unassigned",
-			link: "/"
-		}
 	},
 	{
 		title: "Hangmare",
