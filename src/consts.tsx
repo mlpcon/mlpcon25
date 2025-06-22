@@ -310,7 +310,7 @@ export const VENDORS = [
 		title: "Rocket's Equine Outpost",
 		description: "Pins, shoe charms, wall scrolls, stickers",
 		link: "//ko-fi.com/rocketlawnchair/shop",
-		images: getImages(7, "rockets-equine-outpost", "avif")
+		images: getImages(7, "rockets-equine-outpost", "png")
 	},
 	{
 		title: "OTL Crafts",
