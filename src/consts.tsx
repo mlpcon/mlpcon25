@@ -304,7 +304,7 @@ export const VENDORS = [
 		title: "Sigilponies",
 		description: "Snowpity Charger pre-orders \\oco/",
 		link: "//www.sigil.horse/",
-		images: [`${vendorsImageDir}sigil.avif`]
+		images: [`${vendorsImageDir}sigil.jpg`]
 	},
 	{
 		title: "Rocket's Equine Outpost",
