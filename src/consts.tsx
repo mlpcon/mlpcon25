@@ -107,6 +107,7 @@ export const SCHEDULE: {
 			What's the sexiest episode of <cite>My Little Pony: Friendship is Magic</cite>?  Lesson Zero!<br />
 			Let's actively watch this episode and discuss it at key points.<br />
 			Togehter, we'll appreciate the plot(s) of this best episode.<br />
+			#NotAGoonSesh
 		</>,
 		duration: 60,
 		datetime: Date.parse("2025-07-05T04:45Z"),
