@@ -97,8 +97,8 @@ export const SCHEDULE: {
 			So, relax on your wizard throne and watch multiple ESL pony content and discover different communities and cultures you might not have known about.<br />
 			Mares are beautiful! Even if you don't understand anything they're saying...
 		</>,
-		duration: 105,
-		datetime: Date.parse("2025-07-05T02:45Z"),
+		duration: 90,
+		datetime: Date.parse("2025-07-05T03:00Z"),
 		channel: 1
 	},
 	{
