@@ -244,6 +244,20 @@ export const SCHEDULE: {
 		datetime: Date.parse("2025-07-07T04:30Z"),
 		channel: 1
 	},
+	{
+		title: "Closing Maremonies",
+		description: "Probably same shit as last year, expect autistic sperging, voting results, etc.",
+		duration: 60,
+		datetime: Date.parse("2025-07-07T06:15Z"),
+		channel: 1
+	},
+	{
+		title: "Closing Maremonies",
+		description: "Probably same shit as last year, expect autistic sperging, voting results, etc.",
+		duration: 60,
+		datetime: Date.parse("2025-07-07T06:15Z"),
+		channel: 2
+	},
   // {
   //   title: 'title',
   //   description: <>
