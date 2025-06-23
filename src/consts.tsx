@@ -14,11 +14,18 @@ export const SCHEDULE: {
 	/*** FRIDAY ***/
 	{
 		title: "Opening Maremonies", 
-		description: "TBD", 
+		description: "If I have the time, I'll maybe make this pretty cool.  If not, expect something boring. (It'll probably be boring.)", 
 		duration: 45, 
 		datetime: Date.parse("2025-07-04T15:00Z"), 
 		channel: 1
-	}, 
+	},
+	{
+		title: "Opening Maremonies", 
+		description: "If I have the time, I'll maybe make this pretty cool.  If not, expect something boring. (It'll probably be boring.)", 
+		duration: 45, 
+		datetime: Date.parse("2025-07-04T15:00Z"), 
+		channel: 2
+	},
 	{
 		title: "Amending Fences 10th Anniversary",
 		description: "It's been ten years since Twilight went back to Canterlot to convince her old friend Moondancer to give friendship another chance!  Join us as we rewatch the best episode of Season 5 and its related fan content!",
