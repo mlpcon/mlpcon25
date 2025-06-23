@@ -240,7 +240,7 @@ export const SCHEDULE: {
 	{
 		title: "RarityFest",
 		description: "Get ready with your best outfit and your :dance: emotes, we'll listen to a playlist of Rarity's fansongs, from classics to underrated gems.",
-		duration: 90,
+		duration: 88,
 		datetime: Date.parse("2025-07-07T04:30Z"),
 		channel: 1
 	},
