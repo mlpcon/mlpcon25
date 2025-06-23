@@ -12,15 +12,15 @@ import { Home } from '@/pages/Home';
 import { Vendors } from '@/pages/Vendors';
 import { NotFound } from '@/pages/_404.tsx';
 import { Schedule } from '@/pages/Schedule';
+import { Streaming } from '@/pages/Streaming';
 
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 
 import contard from './assets/images/contard.png';
 import anon from './assets/images/anon.png';
-import '@/style.scss';
 import { withBase } from './utils';
-import { Streaming } from './pages/Streaming';
+import '@/style.scss';
 
 type Themes = 'light' | 'dark';
 
