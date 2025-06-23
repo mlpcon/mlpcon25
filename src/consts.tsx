@@ -314,7 +314,10 @@ export const VENDORS = [
 	},
 	{
 		title: "Rocket's Equine Outpost",
-		description: "Pins, shoe charms, wall scrolls, stickers",
+		description: <>
+			Pins, shoe charms, wall scrolls, stickers<br />
+			Use code <strong>MLPCON25</strong> at checkout for 15% off your order.
+		</>,
 		link: "//ko-fi.com/rocketlawnchair/shop",
 		images: getImages(7, "rockets-equine-outpost", "png")
 	},
