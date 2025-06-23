@@ -70,6 +70,13 @@
       margin: 1rem 0;
     }
 
+
+    h4 {
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      margin: .5rem 0;
+    }
+
     .anon {
       position: fixed;
       bottom: 0;
@@ -89,6 +96,7 @@
   [data-theme='dark'] {
     --primary-color: hsl(330, 100%, 50%);
     --secondary-color: #ffdd1a;
+    --background-color: #060019;
 
     #app {
       font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;

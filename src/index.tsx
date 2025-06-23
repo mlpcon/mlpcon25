@@ -20,6 +20,7 @@ import contard from './assets/images/contard.png';
 import anon from './assets/images/anon.png';
 import '@/style.scss';
 import { withBase } from './utils';
+import { Streaming } from './pages/Streaming';
 
 type Themes = 'light' | 'dark';
 
@@ -82,6 +83,7 @@ export function App() {
             <Route path={withBase('/')} component={Home} />
             <Route path={withBase('/schedule')} component={Schedule} />
             <Route path={withBase('/vendors')} component={Vendors} />
+            <Route path={withBase('/streaming')} component={Streaming} />
             <Route default component={NotFound} />
           </Router>
         </main>
