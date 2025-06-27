@@ -14,7 +14,7 @@ export const getRandomItems = <T>(arr: T[], count: number): T[] => {
 };
 
 const BASE = '';
-export const withBase = (path: string) => `${BASE}${path}`;
+export function withBase(path: string): string { return `${BASE}${path}`; }
 
 export const formatMinutes = (minutes: number) => {
   const hours = Math.floor(minutes / 60);
