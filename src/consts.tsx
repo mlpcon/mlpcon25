@@ -391,6 +391,14 @@ export const VENDORS: Array<Vendors> = [
 		link: "//marefair.org/",
 		images: [getImageFormatArray(`${vendorsImageDir}mare-fair`, ["avif", "webp", "png"])]
 	},
+	{
+		title: "The Gifted Unicorn",
+		description: <>
+			Plushies, key-chains, stickers and more. Use "<strong>MLPCON15</strong>" for a 15% off discount!
+		</>,
+		link: "//linktr.ee/giftedunicorn",
+		images: [getImageFormatArray(`${vendorsImageDir}the-gifted-unicorn`, ["avif", "webp", "png"])]
+	},
 	// {
 	//   title: 'title',
 	//   description: 'description.',
