@@ -1,16 +1,34 @@
 import { ReactNode } from 'preact/compat';
 import { withBase } from './utils';
 
-export const SCHEDULE: {
-  title: string;
-  description: ReactNode;
-  datetime: number; // UNIX
+type VendorImageFormat = "apng" | "avif" | "gif" | "jpeg" | "jpg" | "png" | "svg" | "webp";
+
+interface ScheduleChannel {
+	name: string;
+	link: string;
+}
+
+interface Schedule {
+	title: string;
+	description: ReactNode;
+	datetime: number; // UNIX
   duration: number; // MINUTES
-  channel: number | {
-    name: string;
-    link: string;
-  }; // 1 | 2
-}[] = [
+  channel: 1 | 2 | ScheduleChannel
+}
+
+export interface VendorImage {
+	url: string;
+	type: string;
+}
+
+interface Vendors {
+	title: string;
+	description: ReactNode;
+	link: string;
+	images: Array<Array<VendorImage>>;
+}
+
+export const SCHEDULE: Array<Schedule> = [
 	/*** FRIDAY ***/
 	{
 		title: "Opening Maremonies", 
@@ -281,25 +299,54 @@ export const SCHEDULE: {
   // },
 ].sort((a, b) => a.datetime - b.datetime);
 
-// const vendorsImageDir: string = "/images/vendors/";
-const vendorsImageDir: string = "/cdn-cgi/image/format=auto/https://mlpcon.online/images/vendors/";
+const imageMimeMap: Map<VendorImageFormat, string> = new self.Map<VendorImageFormat, string>([
+	["apng", "image/apng"], 
+	["avif", "image/avif"], 
+	["gif", "image/gif"], 
+	["jpg", "image/jpeg"], 
+	["jpeg", "image/jpeg"], 
+	["png", "image/png"], 
+	["svg", "image/svg+xml"], 
+	["webp", "image/webp"]
+]);
+
+const vendorsImageDir: string = "/images/vendors/";
+// const vendorsImageDir: string = "/cdn-cgi/image/format=auto/https://mlpcon.online/images/vendors/";
 //https://mlpcon.online/cdn-cgi/image/format=auto/https://mlpcon.online/images/vendors/contard-D1laCqa4.png
 
 /**
  * @returns array of image paths
  * @param count - number of images
  * @param folder - folder name
- * @param format - image format (jpg, png, etc.)
+ * @param formats - list image formats (jpg, png, etc.)
  */
-const getImages = (count: number, folder: string, format: string) => {
-	return new Array(count)
-		.fill(0)
-		.map((_, i) => withBase(`${vendorsImageDir}${folder}/${i + 1}.${format}`));
+function getImages(count: number, folder: string, formats: Array<VendorImageFormat>): Array<Array<VendorImage>> {
+	if (!self.Array.isArray(formats))
+		throw new self.Error("Error in `getImages`: expected an Array for `formats`");
+	const result: Array<Array<VendorImage>> = new self.Array<Array<VendorImage>>(count);
+
+	for (let i: int = 0; i < count; i++)
+		result[i] = getImageFormatArray(`${vendorsImageDir}${folder}/${i + 1}`, formats);
+	return result;
 };
 
-const defaultImage: Array<string> = [`${vendorsImageDir}default.jpeg`];
+/**
+ * @returns array of image file names with format extension
+ * @param image - image name
+ * @param formats - list image formats (jpg, png, etc.)
+ */
+function getImageFormatArray(image: string, formats: VendorImageFormat | Array<VendorImageFormat>): Array<VendorImage> {
+	if (self.Array.isArray(formats))
+		return formats.map<Array<string>>((format: string) => {
+			return { url: withBase(`${image}.${format}`), type: imageMimeMap.get(format) };
+		});
+	else
+		return [ { url: `${image}.${formats}`, type: imageMimeMap.get(formats) }];
+}
 
-export const VENDORS = [
+const defaultImage: Array<Array<VendorImage>> = [getImageFormatArray(`${vendorsImageDir}default`, ["webp", "avif", "jpeg"])];
+
+export const VENDORS: Array<Vendors> = [
 	{
 		title: "Cheyenne",
 		description: "Pony items",
@@ -310,7 +357,7 @@ export const VENDORS = [
 		title: "Sigilponies",
 		description: "Snowpity Charger pre-orders \\oco/",
 		link: "//www.sigil.horse/",
-		images: [`${vendorsImageDir}sigil.jpg`]
+		images: [getImageFormatArray(`${vendorsImageDir}sigil`, ["webp", "avif", "jpg"])]
 	},
 	{
 		title: "Rocket's Equine Outpost",
@@ -319,7 +366,7 @@ export const VENDORS = [
 			Use code <strong>MLPCON25</strong> at checkout for 15% off your order.
 		</>,
 		link: "//ko-fi.com/rocketlawnchair/shop",
-		images: getImages(7, "rockets-equine-outpost", "png")
+		images: getImages(7, "rockets-equine-outpost", ["webp", "avif", "png"])
 	},
 	{
 		title: "OTL Crafts",
@@ -327,7 +374,7 @@ export const VENDORS = [
 			LEGO ponies, custom order LEGO ponies (if available), cute or funny stickers, and traditional art commissions. <a href="https://youtu.be/OX8MTUWLSjE">https://youtu.be/OX8MTUWLSjE</a>
 		</>,
 		link: "//ko-fi.com/otlcrafts",
-		images: getImages(10, "otl-crafts", "png")
+		images: getImages(10, "otl-crafts", ["avif", "webp", "png"])
 	},
 	{
 		title: "soapone",
@@ -336,13 +383,13 @@ export const VENDORS = [
 			I love all the autistic sperging (you) puke out in the comment box of the order form. It helps validates my own autistic sperging.
 		</>,
 		link: "//snowpity.shop/",
-		images: [`${vendorsImageDir}soapone.jpg`]
+		images: [getImageFormatArray(`${vendorsImageDir}soapone`, ["webp", "avif", "jpg"])]
 	},
 	{
 		title: "Mare Fair",
 		description: "We are a convention. Ran by dipshits",
 		link: "//marefair.org/",
-		images: [`${vendorsImageDir}mare-fair.png`]
+		images: [getImageFormatArray(`${vendorsImageDir}mare-fair`, ["avif", "webp", "png"])]
 	},
 	// {
 	//   title: 'title',
