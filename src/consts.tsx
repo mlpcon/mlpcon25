@@ -102,6 +102,13 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 1
 	},
 	{
+		title: "GMod Machinima Making 3",
+		description: "The third sequel no one asked for! Watch and learn how GMod machinimas get made from start to finish! And (You) can influence how it goes!",
+		duration: 180,
+		datetime: Date.parse("2025-07-05T00:30Z"),
+		channel: 2
+	},
+	{
 		title: "Trust the process",
 		description: "i dont know fuck you",
 		duration: 45,
