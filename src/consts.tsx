@@ -394,10 +394,10 @@ export const VENDORS: Array<Vendors> = [
 	{
 		title: "The Gifted Unicorn",
 		description: <>
-			Plushies, key-chains, stickers and more. Use "<strong>MLPCON15</strong>" for a 15% off discount!
+			Plushies, key-chains, stickers and more. Use "<strong>MLPCON15</strong>" for a 15% off discount on our ko-fi shop!
 		</>,
 		link: "//linktr.ee/giftedunicorn",
-		images: [getImageFormatArray(`${vendorsImageDir}the-gifted-unicorn`, ["avif", "webp", "png"])]
+		images: getImages(7, "the-gifted-unicorn", ["webp", "avif", "png"])
 	},
 	// {
 	//   title: 'title',
