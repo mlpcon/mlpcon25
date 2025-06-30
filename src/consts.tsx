@@ -236,6 +236,13 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 1
 	},
 	{
+		title: "An interview with the creator of 'Unboxing of 2012 My Little Pony toys at McDonalds' and watch party.",
+		description: "I've contacted alternatekennesaw and asked him if he'd like to have a short, impromptu interview about some of the peak 'cringe' content he produced back during the golden era. Questions about who his favourite pony is, if he's still a brony, what he's up to now, and some questions from chat. Who know's how it'll go, he says his internet is spotty, so it might be a total flop, or not!",
+		duration: 45,
+		datetime: Date.parse("2025-07-06T16:00Z"),
+		channel: 2
+	},
+	{
 		title: "Worms Armageddon Tournament: Good vs Evil",
 		description: "Chat members will submit images to be used for making custom maps, choose what characters populate the sides of Good and Evil, then have absolutely no further involvement as two AI teams duke it out and blow up your creations for control over nothing. Featuring the best software 1999 had to offer: Worms Armageddon. ",
 		duration: 150,
