@@ -206,6 +206,13 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 1
 	},
 	{
+		title: "Marecurial Sonority Mk. II",
+		description: "A conglomareation of operatic maredulation, telecasting mareciferously via ARPANET to your mare-brain. It's maresic! A lot of it.",
+		duration: 237,
+		datetime: Date.parse("2025-07-06T02:00Z"),
+		channel: 1
+	},
+	{
 		title: "Blondie's Raucous Regalings: Real Edition",
 		description: <>
 			You know what goes well with stories? Life.<br />
@@ -213,15 +220,8 @@ export const SCHEDULE: Array<Schedule> = [
 			Let loose the mares of war and delve into this deleterious diary dated by antiquated deeds.
 		</>,
 		duration: 90,
-		datetime: Date.parse("2025-07-06T00:45Z"),
-		channel: 2
-	},
-	{
-		title: "Marecurial Sonority Mk. II",
-		description: "A conglomareation of operatic maredulation, telecasting mareciferously via ARPANET to your mare-brain. It's maresic! A lot of it.",
-		duration: 237,
 		datetime: Date.parse("2025-07-06T02:00Z"),
-		channel: 1
+		channel: 2
 	},
 	{
 		title: "Blondie's Vacuous Vulgarities",
