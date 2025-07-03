@@ -193,10 +193,7 @@ export const SCHEDULE: Array<Schedule> = [
 		description: "Learn more about how the sausage is made.",
 		duration: 105,
 		datetime: Date.parse("2025-07-06T00:00Z"),
-		channel: {
-			name: "Unassigned",
-			link: ""
-		}
+		channel: 2
 	},
 	{
 		title: "12 Angry Mares - PONY COURT",
