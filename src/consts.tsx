@@ -98,7 +98,7 @@ export const SCHEDULE: Array<Schedule> = [
 			</ul>
 		</>,
 		duration: 90,
-		datetime: Date.parse("2025-07-04T23:00Z"),
+		datetime: Date.parse("2025-07-04T22:00Z"),
 		channel: 1
 	},
 	{
