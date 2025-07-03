@@ -177,7 +177,7 @@ export const SCHEDULE: Array<Schedule> = [
 	{
 		title: "HLVRAIMLP: BEST OF",
 		description: "A compilation of the best of clips of all the past HLVRAIMLP panels since there will be no HLVRAIMLP panel for this con ucu.",
-		duration: 180,
+		duration: 210,
 		datetime: Date.parse("2025-07-05T19:30Z"),
 		channel: 2
 	},
