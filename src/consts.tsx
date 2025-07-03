@@ -189,6 +189,16 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 1
 	},
 	{
+		title: "A Mare Fair Lead Meeting",
+		description: "Learn more about how the sausage is made.",
+		duration: 105,
+		datetime: Date.parse("2025-07-06T00:00Z"),
+		channel: {
+			name: "Unassigned",
+			link: ""
+		}
+	},
+	{
 		title: "12 Angry Mares - PONY COURT",
 		description: "For all the debates we have over who was in the wrong or how a pony should be perceived, we've never stopped to ask what Equestrian law has to say! At pony court, these disputes shall at long last be settled once and for all (real!)! Prepare a case, find an anon to argue it against (you'll have to decide who's the prosecution and who's the defense), and make the whole board know the truth. The viewers will act as the jury, voting in a poll at the end of each case to decide the winner. Evidence in the form of photos/videos/etc. is highly encouraged! This might be a total disaster, but that should be fun, too! Note: this is basically just autistic debates with a funny coating over it. Don't sweat it if you don't wanna go full court autism (but it's cool if you do)!",
 		duration: 60,
