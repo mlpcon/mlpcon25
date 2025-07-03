@@ -227,7 +227,7 @@ export const SCHEDULE: Array<Schedule> = [
 		title: "Blondie's Vacuous Vulgarities",
 		description: "Malicious mares make men mald, lustful lads lurk to lay lemon-colored ladies. Join us on an adventure positively dripping with lime slime, turpentine and negativity.",
 		duration: 90,
-		datetime: Date.parse("2025-07-06T02:45Z"),
+		datetime: Date.parse("2025-07-06T04:00Z"),
 		channel: 2
 	},
 	/*** SUNDAY ***/
