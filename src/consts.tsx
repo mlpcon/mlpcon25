@@ -433,6 +433,12 @@ export const VENDORS: Array<Vendors> = [
 		link: "//www.etsy.com/shop/FallenOakRescue",
 		images: getImages(3, "fallen-oak", ["webp", "avif"])
 	},
+	{
+		title: "NeighCon",
+		description: "NeighCon coming 2026",
+		link: "//neighcon.net/",
+		images: defaultImage
+	},
 	// {
 	//   title: 'title',
 	//   description: 'description.',
