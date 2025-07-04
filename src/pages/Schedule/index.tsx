@@ -22,6 +22,7 @@ export const Schedule = () => {
   return (
     <div class={css.wrapper}>
       <h1 class={css.title}>Schedule</h1>
+      <div>Schedule in <a href="//docs.google.com/spreadsheets/d/1lfSBUSv_TnqY8qJN-gjnwJlRK5t7ZV6VM3xRbFl5VBU/edit?usp=sharing">spreadsheet format available here</a>.</div>
       <div class={css.days}>
         {days.map((day) => (
           <a key={day} href={`#${day}`}>
