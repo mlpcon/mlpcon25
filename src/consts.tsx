@@ -427,6 +427,12 @@ export const VENDORS: Array<Vendors> = [
 		link: "//linktr.ee/giftedunicorn",
 		images: getImages(7, "the-gifted-unicorn", ["webp", "avif", "png"])
 	},
+	{
+		title: "Fallen Oak",
+		description: "Fallen Oak Equine Rescue and Rehabilitation, Inc. is located on 7 acres in beautiful Belleview, Florida. We currently operate out of a five-stall barn, a pasture for grazing, and a round pen for training and evaluating rescued horses. We rely on our devoted foster homes to help us transition horses from our facility to their forever home, and to help us when numbers of horses in-need force us to overflow. We couldn't do what we do without our team of foster parents!",
+		link: "//www.etsy.com/shop/FallenOakRescue",
+		images: getImages(3, "fallen-oak", ["webp", "avif"])
+	},
 	// {
 	//   title: 'title',
 	//   description: 'description.',
