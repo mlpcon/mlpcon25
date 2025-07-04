@@ -446,6 +446,12 @@ export const VENDORS: Array<Vendors> = [
 		link: "//neighcon.net/",
 		images: [getImageFormatArray(`${vendorsImageDir}neighcon`, ["webp", "png"])]
 	},
+	{
+		title: "Equus Rescue",
+		description: "Raising money for horses in need",
+		link: "//equusrescue.org/donate",
+		images: getImages(3, "equus-rescue", ["webp", "jpg"])
+	},
 	// {
 	//   title: 'title',
 	//   description: 'description.',
