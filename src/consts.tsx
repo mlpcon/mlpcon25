@@ -116,7 +116,7 @@ export const SCHEDULE: Array<Schedule> = [
 	{
 		title: "Trust the process",
 		description: "i dont know fuck you",
-		duration: 45,
+		duration: 10,
 		datetime: Date.parse("2025-07-05T00:45Z"),
 		channel: 1
 	},
