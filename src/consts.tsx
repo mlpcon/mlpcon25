@@ -437,7 +437,7 @@ export const VENDORS: Array<Vendors> = [
 		title: "NeighCon",
 		description: "NeighCon coming 2026",
 		link: "//neighcon.net/",
-		images: [getImageFormatArray(`${vendorsImageDir}neighcon`, ["avif", "webp", "jpg"])]
+		images: [getImageFormatArray(`${vendorsImageDir}neighcon`, ["webp", "png"])]
 	},
 	// {
 	//   title: 'title',
