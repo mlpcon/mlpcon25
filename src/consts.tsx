@@ -12,8 +12,9 @@ interface Schedule {
 	title: string;
 	description: ReactNode;
 	datetime: number; // UNIX
-  duration: number; // MINUTES
-  channel: 1 | 2 | ScheduleChannel
+	duration: number; // MINUTES
+	channel: 1 | 2 | ScheduleChannel
+	type?: string;
 }
 
 export interface VendorImage {
@@ -31,17 +32,21 @@ interface Vendors {
 export const SCHEDULE: Array<Schedule> = [
 	/*** FRIDAY ***/
 	{
-		title: "Opening Maremonies", 
-		description: "If I have the time, I'll maybe make this pretty cool.  If not, expect something boring. (It'll probably be boring.)", 
-		duration: 45, 
-		datetime: Date.parse("2025-07-04T15:00Z"), 
+		type: 'separator',
+		datetime: Date.parse("2025-07-04T15:00Z"),
+	} as any,
+	{
+		title: "Opening Maremonies",
+		description: "If I have the time, I'll maybe make this pretty cool.  If not, expect something boring. (It'll probably be boring.)",
+		duration: 45,
+		datetime: Date.parse("2025-07-04T15:00Z"),
 		channel: 1
 	},
 	{
-		title: "Opening Maremonies", 
-		description: "If I have the time, I'll maybe make this pretty cool.  If not, expect something boring. (It'll probably be boring.)", 
-		duration: 45, 
-		datetime: Date.parse("2025-07-04T15:00Z"), 
+		title: "Opening Maremonies",
+		description: "If I have the time, I'll maybe make this pretty cool.  If not, expect something boring. (It'll probably be boring.)",
+		duration: 45,
+		datetime: Date.parse("2025-07-04T15:00Z"),
 		channel: 2
 	},
 	{
@@ -147,6 +152,10 @@ export const SCHEDULE: Array<Schedule> = [
 	},
 	/*** SATURDAY ***/
 	{
+		type: 'separator',
+		datetime: Date.parse("2025-07-05T14:45Z"),
+	},
+	{
 		title: "Random Mare Appreciation",
 		description: "There are so many background mares in the show that don't get a lot of attention, so we will let RNG highlight some of them for us! Who will we see? I don't know! Expect unscripted mareschizo autism.",
 		duration: 60,
@@ -236,6 +245,10 @@ export const SCHEDULE: Array<Schedule> = [
 	},
 	/*** SUNDAY ***/
 	{
+		type: 'separator',
+		datetime: Date.parse("2025-07-06T13:00Z"),
+	},
+	{
 		title: "Traditional art draw panel",
 		description: "You know the drill. You give me prompts, I draw mares.",
 		duration: 120,
@@ -319,29 +332,29 @@ export const SCHEDULE: Array<Schedule> = [
 		datetime: Date.parse("2025-07-07T06:15Z"),
 		channel: 2
 	},
-  // {
-  //   title: 'title',
-  //   description: <>
-  //     <p>something</p>
-  //     <p>something2</p>
-  //   </>,
-  //   duration: 30,
-  //   datetime: Date.parse("2025-08-04T12:00:00+00:00"),
-  //   channel: {
-  //     name: "rewatch anon",
-  //     link: "https://cytu.be/r/teststestestset"
-  //   },
-  // },
+	// {
+	//   title: 'title',
+	//   description: <>
+	//     <p>something</p>
+	//     <p>something2</p>
+	//   </>,
+	//   duration: 30,
+	//   datetime: Date.parse("2025-08-04T12:00:00+00:00"),
+	//   channel: {
+	//     name: "rewatch anon",
+	//     link: "https://cytu.be/r/teststestestset"
+	//   },
+	// },
 ].sort((a, b) => a.datetime - b.datetime);
 
 const imageMimeMap: Map<VendorImageFormat, string> = new self.Map<VendorImageFormat, string>([
-	["apng", "image/apng"], 
-	["avif", "image/avif"], 
-	["gif", "image/gif"], 
-	["jpg", "image/jpeg"], 
-	["jpeg", "image/jpeg"], 
-	["png", "image/png"], 
-	["svg", "image/svg+xml"], 
+	["apng", "image/apng"],
+	["avif", "image/avif"],
+	["gif", "image/gif"],
+	["jpg", "image/jpeg"],
+	["jpeg", "image/jpeg"],
+	["png", "image/png"],
+	["svg", "image/svg+xml"],
 	["webp", "image/webp"]
 ]);
 
@@ -360,7 +373,7 @@ function getImages(count: number, folder: string, formats: Array<VendorImageForm
 		throw new self.Error("Error in `getImages`: expected an Array for `formats`");
 	const result: Array<Array<VendorImage>> = new self.Array<Array<VendorImage>>(count);
 
-	for (let i: int = 0; i < count; i++)
+	for (let i: number = 0; i < count; i++)
 		result[i] = getImageFormatArray(`${vendorsImageDir}${folder}/${i + 1}`, formats);
 	return result;
 };
@@ -370,18 +383,18 @@ function getImages(count: number, folder: string, formats: Array<VendorImageForm
  * @param image - image name
  * @param formats - list image formats (jpg, png, etc.)
  */
-function getImageFormatArray(image: string, formats: VendorImageFormat | Array<VendorImageFormat>): Array<VendorImage> {
+function getImageFormatArray(image: string, formats: VendorImageFormat | VendorImageFormat[]): VendorImage[] {
 	if (self.Array.isArray(formats))
-		return formats.map<Array<string>>((format: string) => {
-			return { url: withBase(`${image}.${format}`), type: imageMimeMap.get(format) };
+		return formats.map((format: string) => {
+			return { url: withBase(`${image}.${format}`), type: imageMimeMap.get(format as VendorImageFormat) };
 		});
 	else
-		return [ { url: `${image}.${formats}`, type: imageMimeMap.get(formats) }];
+		return [{ url: `${image}.${formats}`, type: imageMimeMap.get(formats) }];
 }
 
-const defaultImage: Array<Array<VendorImage>> = [getImageFormatArray(`${vendorsImageDir}default`, ["webp", "avif", "jpeg"])];
+const defaultImage: VendorImage[][] = [getImageFormatArray(`${vendorsImageDir}default`, ["webp", "avif", "jpeg"])];
 
-export const VENDORS: Array<Vendors> = [
+export const VENDORS: Vendors[] = [
 	{
 		title: "Cheyenne",
 		description: "Pony items",

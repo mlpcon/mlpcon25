@@ -4,15 +4,8 @@ import { SCHEDULE } from '@/consts';
 import css from './style.module.scss';
 import { formatMinutes } from '@/utils';
 
-const nyHourFormatter = new Intl.DateTimeFormat('en-US', {
-  timeZone: 'America/New_York',
-  hour: '2-digit',
-  hour12: false,
-});
-
 export const Schedule = () => {
   const [days, setDays] = useState<string[]>([]);
-  const lastDay = useRef<string>(null)
 
   useEffect(() => {
     const arr = document.querySelectorAll<HTMLDivElement>(`.${css.separator}`);
@@ -38,38 +31,30 @@ export const Schedule = () => {
         )}
         {SCHEDULE.map((item, i) => {
           const date = new Date(item.datetime);
-
-          const nyHourString = nyHourFormatter.format(date);
-          const nyHour = Number(nyHourString);
-
           const day = new Date(item.datetime).toLocaleString('en-US', {
             day: '2-digit',
             month: 'long',
             weekday: 'long',
           });
-          let displaySeparator = false;
-          if (!lastDay.current || (nyHour >= 8 && lastDay.current !== day)) {
-            displaySeparator = true;
-            lastDay.current = day;
+
+          if (item.type === 'separator') {
+            return (
+              <h3
+                id={date
+                  .toLocaleString('en-US', { weekday: 'long' })
+                  .toLowerCase()}
+                class={cn(css.separator, 'day-header')}
+                role='separator'
+              >
+                <time datetime={date.toLocaleDateString('en-CA')}>{day}</time>
+              </h3>
+            )
           }
-          if (i === SCHEDULE.length - 1) {
-            lastDay.current = null
-          }
+
           const dur = formatMinutes(item.duration);
 
           return (
             <>
-              {displaySeparator && (
-                <h3
-                  id={date
-                    .toLocaleString('en-US', { weekday: 'long' })
-                    .toLowerCase()}
-                  class={cn(css.separator, 'day-header')}
-                  role='separator'
-                >
-                  <time datetime={date.toLocaleDateString('en-CA')}>{day}</time>
-                </h3>
-              )}
               <section class={cn(css.listItem, 'h-event')} key={item.title}>
                 <h3 class='p-name'>{item.title}</h3>
                 <div class={css.date}>
