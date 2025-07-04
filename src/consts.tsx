@@ -138,6 +138,13 @@ export const SCHEDULE: Array<Schedule> = [
 		datetime: Date.parse("2025-07-05T04:45Z"),
 		channel: 1
 	},
+	{
+		title: "Mare Stare Competition",
+		description: "Minuette challenges you to a mare stare competition! Do you have what it takes to face off with Ponyville's reigning champ?",
+		duration: 15,
+		datetime: Date.parse("2025-07-05T06:00Z"),
+		channel: 1
+	},
 	/*** SATURDAY ***/
 	{
 		title: "Random Mare Appreciation",
