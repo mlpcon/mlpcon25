@@ -102,7 +102,7 @@ export const SCHEDULE: Array<Schedule> = [
 				<li>Every 100 USD donated will spin the Wheel of Pain, and a mallus will be inflicted on all artists for the entire game unless otherwise stated</li>
 			</ul>
 		</>,
-		duration: 90,
+		duration: 150,
 		datetime: Date.parse("2025-07-04T22:00Z"),
 		channel: 1
 	},
