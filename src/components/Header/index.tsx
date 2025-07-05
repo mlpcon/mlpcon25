@@ -46,7 +46,7 @@ export function Header() {
         <a target={'_blank'} href='https://forms.gle/3FQuGsF9n4aUSapU7'>Be a Vendor</a>
         <a href={withBase('/schedule')}>Schedule</a>
         <a href={withBase('/vendors')}>Vendors</a>
-        <a target={'_blank'} href='//boards.4chan.org/mlp/thread/42325772'>
+        <a target={'_blank'} href='//boards.4chan.org/mlp/thread/42328655'>
           Current Thread
         </a>
       </nav>
