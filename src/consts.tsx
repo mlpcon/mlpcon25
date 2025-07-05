@@ -184,6 +184,13 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 1
 	},
 	{
+		title: "/mlp/ 4cc friendlies???",
+		description: "idk if this is happening or not",
+		duration: 60,
+		datetime: Date.parse("2025-07-05T18:15Z"),
+		channel: 2
+	},
+	{
 		title: "Hangmare",
 		description: "silly games of hangman (and more) with a pony twist,",
 		duration: 75,
