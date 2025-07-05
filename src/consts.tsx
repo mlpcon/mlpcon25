@@ -165,7 +165,7 @@ export const SCHEDULE: Array<Schedule> = [
 	{
 		title: "/mlp/ the Antithology Volume 5",
 		description: "Come watch /mlp/'s FIFTH annual Antithology!",
-		duration: 90,
+		duration: 74,
 		datetime: Date.parse("2025-07-05T16:00Z"),
 		channel: 1
 	},
