@@ -228,7 +228,7 @@ export const SCHEDULE: Array<Schedule> = [
 	{
 		title: "Marecurial Sonority Mk. II",
 		description: "A conglomareation of operatic maredulation, telecasting mareciferously via ARPANET to your mare-brain. It's maresic! A lot of it.",
-		duration: 237,
+		duration: 258,
 		datetime: Date.parse("2025-07-06T02:00Z"),
 		channel: 1
 	},
