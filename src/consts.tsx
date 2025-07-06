@@ -311,7 +311,7 @@ export const SCHEDULE: Array<Schedule> = [
 		title: "/mlp/ the Antithology Volume 5: Freedom Land Prime Time Rewatch",
 		description: "Come watch /mlp/'s FIFTH annual Antithology!",
 		duration: 74,
-		datetime: Date.parse("2025-07-07T00:00Z"),
+		datetime: Date.parse("2025-07-07T01:00Z"),
 		channel: 2
 	},
 	{
