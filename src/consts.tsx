@@ -286,7 +286,7 @@ export const SCHEDULE: Array<Schedule> = [
 	{
 		title: "Watercolors Mares",
 		description: "Traditional Art panel about drawing your favorite mares from the show in watercolors on paper. Pony requests from chat are welcome.",
-		duration: 90,
+		duration: 150,
 		datetime: Date.parse("2025-07-06T17:00Z"),
 		channel: 2
 	},
