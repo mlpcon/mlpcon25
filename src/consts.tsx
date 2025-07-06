@@ -308,6 +308,13 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 1
 	},
 	{
+		title: "/mlp/ the Antithology Volume 5: Freedom Land Prime Time Rewatch",
+		description: "Come watch /mlp/'s FIFTH annual Antithology!",
+		duration: 74,
+		datetime: Date.parse("2025-07-07T00:00Z"),
+		channel: 2
+	},
+	{
 		title: "Live CYOA III: Anonfilly Goes to Manehatten",
 		description: <>
 			The third of installment of these CYOA adventures, and no less nonsensical. After a spat with Twilight and her friends(Ice cream IS TO a supplement for dinner!!!) Anonfilly decides to runaway to Manehatten to begin a new life. Will she find a meaningful connection? Will she find ways to make bits? Will she explode into an atomic reaction, igniting Equestria's atmosphere? You decide!<br />
