@@ -291,6 +291,13 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 2
 	},
 	{
+		title: "Worms Armageddon Tournament: Good vs Evil (Continued)",
+		description: "Chat members will submit images to be used for making custom maps, choose what characters populate the sides of Good and Evil, then have absolutely no further involvement as two AI teams duke it out and blow up your creations for control over nothing. Featuring the best software 1999 had to offer: Worms Armageddon. ",
+		duration: 60,
+		datetime: Date.parse("2025-07-06T19:30Z"),
+		channel: 2
+	},
+	{
 		title: "Russian Fanfiction overview",
 		description: "Do (you) like MARES? What about stories with MARES? Tune in to hear about the best and the worst examples of Russian pony fanfiction! What to expect - summaries of popular stories and the stories i liked, my personal opinions regarding those fanfics and the fruits of a 1000 hours spent in MS Paint!",
 		duration: 120,
