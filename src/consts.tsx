@@ -305,6 +305,13 @@ export const SCHEDULE: Array<Schedule> = [
 		channel: 1
 	},
 	{
+		title: "Watercolors Mares (Continued)",
+		description: "Traditional Art panel about drawing your favorite mares from the show in watercolors on paper. Pony requests from chat are welcome.",
+		duration: 75,
+		datetime: Date.parse("2025-07-06T20:30"),
+		channel: 2
+	},
+	{
 		title: "Gamejam showcase: Your choice edition!",
 		description: <>
 			Welcome to the fifth /mlp/ game jam! We'll once again be taking a look st the submitted games from our VERY talented game devs in the board.<br />
