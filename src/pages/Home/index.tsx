@@ -20,7 +20,7 @@ export function Home() {
     return (
       <div class={css.wrapper}>
         <section>
-          <h2>What is it?</h2>
+          <h2>What was it?</h2>
           <p>
             Anons from the /mlp/ board will get together to host their own online <s>shit show</s> convention. 
           </p>
@@ -37,8 +37,17 @@ export function Home() {
             replays.
           </p>
         </section>
-
+        
         <section>
+         <h2>What happened?</h2>
+          <p>Check the /mlp/ con 2025 Pony.Tube playlists</p>
+          <ul>
+            <li><a href="https://pony.tube/w/p/kHaxG6h1EiPs553wZT5iDy">/mlp/con 2025 CyTube 1</a></li>
+            <li><a href="https://pony.tube/w/p/sxfkHDqoXMSuBBwbkhWKc9">/mlp/con 2025 CyTube 2</a></li>
+            <li><a href="https://pony.tube/w/p/wR2wVSDjjQA1EZSoJU95qc">/mlp/con 2025 Panels </a></li>
+          </ul>
+        </section>
+        {/* <section>
           <h2>I Want To Participate!</h2>
           <p>
             Got some merch to sell? <a target={'_blank'} class={css.applyVendor} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Apply to be a Vendor!</a>
@@ -46,10 +55,10 @@ export function Home() {
           <p>
             Want broadcast your autism to the masses? <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/Ge5AXkJ4zU5VE6B39'}>Host a Panel!</a>
           </p>
-        </section>
+        </section> */}
 
         <section>
-          <h2>What Happened?</h2>
+          <h2>What happened in previous years?</h2>
           <p>
             Over 1,640 anons attended at least some portion of the festivities
             the weekend of June 28-30, 2024.
@@ -82,7 +91,7 @@ export function Home() {
     <div class={css.wrapper}>
       <div class={css.card}>
         <div class={css.cardContent}>
-          <h2>What is it?</h2>
+          <h2>What was it?</h2>
           <p>
             Anons from the /mlp/ board will get together to host their own online <s>shit show</s> convention. 
           </p>
@@ -115,19 +124,19 @@ export function Home() {
           <p>
             Check the <a href={withBase('/vendors')}>Vendors</a> page for more!
           </p>
-          <p>
+          {/* <p>
             <a target={'_blank'} class={css.applyVendor} href={'https://forms.gle/3FQuGsF9n4aUSapU7'}>Apply to be a Vendor!</a>
-          </p>
+          </p> */}
         </div>
       </div>
 
       <div class={css.card}>
         <div class={css.cardContent}>
-          <h2>Get Involved</h2>
-          <p>
-            Do you like ponies? Do you have ideas you want to share with fellow anons? Or just want to celebrate the magic of the show?{' '}
-          </p>
-          <p> <a class={css.applyVendor} target={'_blank'} href={'https://forms.gle/Ge5AXkJ4zU5VE6B39'}>Host a Panel Now!<span class={css.orElse}> Or else.</span></a></p>
+          <h2>What happened?</h2>
+          <p>Check the /mlp/ con 2025 Pony.Tube playlists</p>
+          <a href="https://pony.tube/w/p/kHaxG6h1EiPs553wZT5iDy">/mlp/con 2025 CyTube 1</a>
+          <a href="https://pony.tube/w/p/sxfkHDqoXMSuBBwbkhWKc9">/mlp/con 2025 CyTube 2</a>
+          <a href="https://pony.tube/w/p/wR2wVSDjjQA1EZSoJU95qc">/mlp/con 2025 Panels </a>
 
         </div>
       </div>
@@ -145,7 +154,7 @@ export function Home() {
 
       <div class={css.card}>
         <div class={css.cardContent}>
-          <h2>What happened before?</h2>
+          <h2>What happened in previous years?</h2>
           <p>
             If you're looking for prior year's /mlp/ con sites, they've now been
             archived under new domains:

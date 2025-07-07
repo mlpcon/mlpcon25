@@ -42,12 +42,12 @@ export function Header() {
       )}
       <div class={cn(css.washiTape, css.bottom)}></div>
       <nav>
-        <a target={'_blank'} href='https://forms.gle/Ge5AXkJ4zU5VE6B39'>Host a Panel</a>
-        <a target={'_blank'} href='https://forms.gle/3FQuGsF9n4aUSapU7'>Be a Vendor</a>
+        {/* <a target={'_blank'} href='https://forms.gle/Ge5AXkJ4zU5VE6B39'>Host a Panel</a> */}
+        {/* <a target={'_blank'} href='https://forms.gle/3FQuGsF9n4aUSapU7'>Be a Vendor</a> */}
         <a href={withBase('/schedule')}>Schedule</a>
         <a href={withBase('/vendors')}>Vendors</a>
         <a target={'_blank'} href='//boards.4chan.org/mlp/thread/42333738'>
-          Current Thread
+          Last Thread
         </a>
       </nav>
     </header>
