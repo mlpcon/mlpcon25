@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'preact/hooks';
+import { useContext, useEffect, useMemo, useState } from 'preact/hooks';
 import { Theme } from '@/index';
 import { getRandomItems, withBase } from '@/utils';
 import { VENDORS } from '@/consts';
@@ -85,7 +85,10 @@ export function Home() {
     );
   }
 
-  const vendors = getRandomItems(VENDORS, 3);
+  const [vendors, setVendors] = useState([]) 
+  useEffect(() => {
+    setVendors(getRandomItems(VENDORS, 3))
+  }, [])
 
   return (
     <div class={css.wrapper}>
